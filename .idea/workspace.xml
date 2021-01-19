@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="" />
+    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="17/01/21- Inclusão do arquivo de Licença.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add_to_wishlist.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add_to_wishlist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cart_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/checkout_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/order_complete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/order_complete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +21,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,6 +137,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1n2OAOI0QMQ6U1Eoll120k1arlA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -187,6 +202,9 @@
       <workItem from="1610904154513" duration="1788000" />
       <workItem from="1610906013027" duration="1784000" />
       <workItem from="1610907826103" duration="657000" />
+      <workItem from="1611085706589" duration="1784000" />
+      <workItem from="1611087520732" duration="1608000" />
+      <workItem from="1611090742986" duration="885000" />
     </task>
     <servers />
   </component>
