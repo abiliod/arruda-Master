@@ -212,15 +212,26 @@ Authentication scaffolding generated successfully.
  
  php artisan make:migration create_paginas_table
  php artisan make:migration create_slides_table
- 
-  
+
  php artisan make:migration create_permissaos_table
  php artisan make:migration create_papels_table
  php artisan make:migration create_papel_users_table
  php artisan make:migration create_pessoas_table
  php artisan make:migration Create_PapelPermissao_Table
  
+ 
+ php artisan make:model Product\Product -m
+ php artisan make:controller Product\ProductController
 
+C:\xampp\htdocs\arrudacalcados (main -> origin)
+λ php artisan make:model Product\Product -m
+Model created successfully.
+Created Migration: 2021_01_24_145355_create_products_table
+
+C:\xampp\htdocs\arrudacalcados (main -> origin)
+λ php artisan migrate
+Migrating: 2021_01_24_145355_create_products_table
+Migrated:  2021_01_24_145355_create_products_table (258.01ms)
 
 
  
