@@ -19,7 +19,7 @@
                     <ul>
                         <li><a href="{{ route('index') }}">Home</a></li>
                         <li class="has-dropdown active">
-                            <a href="{{ route('men') }}">Men</a>
+                            <a href="{{ route('men') }}">Masculino</a>
                             <ul class="dropdown">
                                 <li><a href="{{ route('product_detail') }}">Product Detail</a></li>
                                 <li><a href="{{ route('cart') }}">Shopping Cart</a></li>
@@ -30,9 +30,9 @@
                         </li>
 
 
-                        <li><a href="{{ route('women') }}">Women</a></li>
-                        <li><a href="{{ route('sobre') }}">About</a></li>
-                        <li><a href="{{ route('contato') }}">Contact</a></li>
+                        <li><a href="{{ route('women') }}">Feminino</a></li>
+                        <li><a href="{{ route('sobre') }}">Sobre</a></li>
+                        <li><a href="{{ route('contato') }}">Contato</a></li>
                         <li class="cart"><a href="{{ route('cart') }}"><i class="icon-shopping-cart"></i> Cart [0]</a></li>
 
                     </ul>
@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <div class="sale">
         <div class="container">
             <div class="row">
@@ -48,12 +49,12 @@
                         <div class="owl-carousel2">
                             <div class="item">
                                 <div class="col">
-                                    <h3><a href="#">25% off (Almost) Everything! Use Code: Summer Sale</a></h3>
+                                    <h3><a href="#">Produtos com 25% de desconto! Liquidação.</a></h3>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col">
-                                    <h3><a href="#">Our biggest sale yet 50% off all summer shoes</a></h3>
+                                    <h3><a href="#">Produtos com  até 50% de desconto!.</a></h3>
                                 </div>
                             </div>
                         </div>

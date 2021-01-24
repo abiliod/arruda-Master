@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Cart;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Admin\Pagina;
 
 class CartController extends Controller
 {
@@ -31,11 +32,17 @@ class CartController extends Controller
     }
     public function contato() //
     {
-        return view('contact_site');
+        $pagina = Pagina::where('tipo','=','contato')->first();
+
+        return view('contact_site',compact('pagina'));
+       // return view('contact_site');
     }
     public function sobre() //
     {
-        return view('about_site');
+        $pagina = Pagina::where('tipo','=','sobre')->first();
+
+        return view('about_site',compact('pagina'));
+     //   return view('about_site');
     }
 
     public function search()

@@ -14,5 +14,16 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+
+        // inclusao de Paginas Administrativas Sobre e Contato
+
+        $this->call([
+            PaginasTableSeeder::class,
+
+        ]);
+
+
+        //Imagens iniciais para Pagina Slider Administrativas
+    //    $this->call(SlidesTableSeeder::class);
     }
 }

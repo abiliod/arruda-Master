@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+    <meta property="og:title" content="Arruda Calçados" />
+    <meta property="og:type" content="Fabrica e Vendas de calçados" />
+    <meta property=”og:description” content=”Fabricante"/>
+    <meta property="og:url" content="http://www.arrudacalcados.com.br" />
+    <meta property="og:image" content="{{asset('img/institucional/logo.png')}}" />
+    <meta property="og:site_name" content="Arruda Calçados" />
+    <meta property="fb:admins" content="100001090152041" />
+    <meta name="author" content="Abilio Dias Ferreira, Yuri Dumont"/>
+    <meta name=”creator” content="Abilio Dias Ferreira, Yuri Dumont"/>
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="reply-to" content="abiliobonito@hotmail.com , yuri....">
+    <meta name="robots" content="index,nofollow">
+    <meta name="keywords" content="">
+    <meta name="keywords" content="rasteirinhas, escarpan" />
+    <meta name="description" content="fabrica de calçados, venda de calçados, locação de calçados, tendencia de moda em calçados feminino, calçados feminino" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Arruda Calçados</title>
 
     <!-- Fonts -->
@@ -51,55 +67,68 @@
     </style>
 </head>
 <body class="antialiased">
-<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-    @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            @auth
-                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-            @else
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                @endif
-            @endauth
+    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="colorlib-loader"> </div>
+        <div id="page">
+
+            @include('layouts._site._nav')
+            @if(Session::has('mensagem'))
+                <nav class="colorlib-nav" role="navigation">
+                    <div class="sale">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8 offset-sm-2 text-center">
+                                    <div class="row">
+                                        <div class="owl-carousel2">
+                                            <div class="item">
+                                                <div class="col">
+                                                    <h3>{{ Session::get('mensagem')['msg'] }}</h3>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="col">
+                                                    <h3>{{ Session::get('mensagem')['msg'] }}</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            @endif
+            @yield('content')
+
+            @include('layouts._site._footer')
+
         </div>
-        @endif
-        <div class="colorlib-loader"></div>
-
-            <div id="page">
-
-                @include('layouts._site._nav')
-
-                 @yield('content')
-
-                @include('layouts._site._footer')
-
-            </div>
 
 
-<!-- jQuery -->
-<script src="js/jquery.min.js"></script>
-<!-- popper -->
-<script src="js/popper.min.js"></script>
-<!-- bootstrap 4.1 -->
-<script src="js/bootstrap.min.js"></script>
-<!-- jQuery easing -->
-<script src="js/jquery.easing.1.3.js"></script>
-<!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- Flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
-<!-- Owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
-<!-- Magnific Popup -->
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/magnific-popup-options.js"></script>
-<!-- Date Picker -->
-<script src="js/bootstrap-datepicker.js"></script>
-<!-- Stellar Parallax -->
-<script src="js/jquery.stellar.min.js"></script>
-<!-- Main -->
-<script src="js/main.js"></script>
-</body>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap 4.1 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="js/jquery.flexslider-min.js"></script>
+    <!-- Owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <!-- Date Picker -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    </body>
 </html>

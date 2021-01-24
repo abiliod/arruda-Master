@@ -1,5 +1,9 @@
 @extends('layouts._site.app')
+
 @section('content')
+
+    @include('layouts._site._navHhasLogin')
+
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
@@ -10,11 +14,11 @@
                             <div class="col-sm-6 offset-sm-3 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h1 class="head-1">Men's</h1>
-                                        <h2 class="head-2">Shoes</h2>
-                                        <h2 class="head-3">Collection</h2>
-                                        <p class="category"><span>New trending shoes</span></p>
-                                        <p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        <h1 class="head-1">Homens</h1>
+                                        <h2 class="head-2">Calçados</h2>
+                                        <h2 class="head-3">Coleções</h2>
+                                        <p class="category"><span>Tendências</span></p>
+                                        <p><a href="#" class="btn btn-primary">Coleção de Fábrica</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -28,11 +32,11 @@
                             <div class="col-sm-6 offset-sm-3 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h1 class="head-1">Huge</h1>
-                                        <h2 class="head-2">Sale</h2>
+                                        <h1 class="head-1">Grandes</h1>
+                                        <h2 class="head-2">Descontos</h2>
                                         <h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
-                                        <p class="category"><span>Big sale sandals</span></p>
-                                        <p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        <p class="category"><span>Sandálias em liquidação.</span></p>
+                                        <p><a href="#" class="btn btn-primary">Coleção de Fábrica</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -46,11 +50,11 @@
                             <div class="col-sm-6 offset-sm-3 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h1 class="head-1">New</h1>
-                                        <h2 class="head-2">Arrival</h2>
-                                        <h2 class="head-3">up to <strong class="font-weight-bold">30%</strong> off</h2>
-                                        <p class="category"><span>New stylish shoes for men</span></p>
-                                        <p><a href="#" class="btn btn-primary">Shop Collection</a></p>
+                                        <h1 class="head-1">Chegaram</h1>
+                                        <h2 class="head-2">Novos modelos</h2>
+                                        <h2 class="head-3">com até <strong class="font-weight-bold">30%</strong> off</h2>
+                                        <p class="category"><span>Novos Calçados elegantes para homens</span></p>
+                                        <p><a href="#" class="btn btn-primary">Coleção de Fábrica</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -60,11 +64,14 @@
             </ul>
         </div>
     </aside>
+
     <div class="colorlib-intro">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <h2 class="intro">It started with a simple idea: Create quality, well-designed products that I wanted myself.</h2>
+                    <h2 class="intro">
+                        Criação de produtos de qualidade e bem projetados que você deseja.
+                    </h2>
                 </div>
             </div>
         </div>
@@ -76,7 +83,7 @@
                     <div class="featured">
                         <a href="#" class="featured-img" style="background-image: url(images/men.jpg);"></a>
                         <div class="desc">
-                            <h2><a href="#">Shop Men's Collection</a></h2>
+                            <h2><a href="#">Coleção masculina</a></h2>
                         </div>
                     </div>
                 </div>
@@ -84,7 +91,7 @@
                     <div class="featured">
                         <a href="#" class="featured-img" style="background-image: url(images/women.jpg);"></a>
                         <div class="desc">
-                            <h2><a href="#">Shop Women's Collection</a></h2>
+                            <h2><a href="#">Coleção feminina</a></h2>
                         </div>
                     </div>
                 </div>
@@ -96,7 +103,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 offset-sm-2 text-center colorlib-heading">
-                    <h2>Best Sellers</h2>
+                    <h2>Mais Vendidos</h2>
                 </div>
             </div>
             <div class="row row-pb-md">
@@ -282,7 +289,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><a href="#" class="btn btn-primary btn-lg">Shop All Products</a></p>
+                    <p><a href="#" class="btn btn-primary btn-lg">Todos Produtos</a></p>
                 </div>
             </div>
         </div>

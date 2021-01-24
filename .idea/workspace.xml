@@ -1,7 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="" />
+    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Site/PaginaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_21_152426_create_paginas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_115058_create_slides_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PaginasTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/whats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat11.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat15.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat18.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat19.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat19a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_cat8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/modelo_img_home.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/paginas/1/_img_53383.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/paginas/2/_img_89779.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/paginas/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/paginas/editar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/paginas/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/papel/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/papel/adicionar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/papel/editar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/papel/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/papel/permissao.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/_formCreateEndereco.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/_formEditEndereco.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/_formStep4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/adicionarPessoa.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/editarEndereco.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCEP.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCPF_CNPJ.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/manter.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/slides/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/slides/adicionar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/slides/editar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/slides/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/adicionar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/editar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/papel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/contato.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_filtros.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_lista_produtos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_slides.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_navHhasLogin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/contato.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/site/sobre.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact_site.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact_site.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_parceiros.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_parceiros.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +113,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -126,12 +236,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1n2OAOI0QMQ6U1Eoll120k1arlA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -141,22 +254,28 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\site" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\database\seeders" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Site" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\paginas" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_admin" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admin" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+    <configuration name="Unnamed" type="PhpLocalRunConfigurationType" factoryName="PHP Console" nameIsGenerated="true">
+      <CommandLine workingDirectory="$PROJECT_DIR$">
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.4" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
       <method v="2" />
     </configuration>
   </component>
@@ -193,7 +312,58 @@
       <workItem from="1610907826103" duration="657000" />
       <workItem from="1611085706589" duration="1784000" />
       <workItem from="1611087520732" duration="1608000" />
-      <workItem from="1611090742986" duration="1188000" />
+      <workItem from="1611090742986" duration="2622000" />
+      <workItem from="1611145908573" duration="1441000" />
+      <workItem from="1611147751569" duration="2711000" />
+      <workItem from="1611151853681" duration="1066000" />
+      <workItem from="1611163462797" duration="1795000" />
+      <workItem from="1611165301350" duration="1787000" />
+      <workItem from="1611167166449" duration="2587000" />
+      <workItem from="1611169925659" duration="601000" />
+      <workItem from="1611185689521" duration="1728000" />
+      <workItem from="1611190766076" duration="2370000" />
+      <workItem from="1611196731260" duration="721000" />
+      <workItem from="1611237631604" duration="1778000" />
+      <workItem from="1611239472935" duration="1940000" />
+      <workItem from="1611241770705" duration="975000" />
+      <workItem from="1611245510869" duration="1783000" />
+      <workItem from="1611247327945" duration="1789000" />
+      <workItem from="1611249171452" duration="1782000" />
+      <workItem from="1611250990613" duration="2042000" />
+      <workItem from="1611253354459" duration="1877000" />
+      <workItem from="1611319424004" duration="1427000" />
+      <workItem from="1611326332709" duration="1752000" />
+      <workItem from="1611328438994" duration="1708000" />
+      <workItem from="1611333300111" duration="1786000" />
+      <workItem from="1611335124306" duration="1890000" />
+      <workItem from="1611337069749" duration="3722000" />
+      <workItem from="1611358474035" duration="1633000" />
+      <workItem from="1611360284876" duration="1808000" />
+      <workItem from="1611362127389" duration="917000" />
+      <workItem from="1611363293967" duration="947000" />
+      <workItem from="1611365978963" duration="1932000" />
+      <workItem from="1611367953873" duration="1494000" />
+      <workItem from="1611398087664" duration="1580000" />
+      <workItem from="1611404376237" duration="10000" />
+      <workItem from="1611415538818" duration="1376000" />
+      <workItem from="1611417543028" duration="1381000" />
+      <workItem from="1611420137678" duration="887000" />
+      <workItem from="1611434198642" duration="3402000" />
+      <workItem from="1611439175526" duration="1781000" />
+      <workItem from="1611441000655" duration="683000" />
+      <workItem from="1611453176521" duration="1144000" />
+      <workItem from="1611480958968" duration="1798000" />
+      <workItem from="1611482787694" duration="1575000" />
+      <workItem from="1611484622182" duration="2181000" />
+      <workItem from="1611486839536" duration="1784000" />
+      <workItem from="1611488654829" duration="2030000" />
+      <workItem from="1611490741432" duration="2930000" />
+      <workItem from="1611493876834" duration="1782000" />
+      <workItem from="1611495694410" duration="1781000" />
+      <workItem from="1611497518193" duration="7665000" />
+      <workItem from="1611505228463" duration="1789000" />
+      <workItem from="1611507050235" duration="1782000" />
+      <workItem from="1611508866228" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -202,21 +372,84 @@
       <option name="project" value="LOCAL" />
       <updated>1611091901223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
+      <created>1611091939363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611091939363</updated>
+    </task>
+    <task id="LOCAL-00003" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
+      <created>1611091949627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611091949627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade." />
     <option name="LAST_COMMIT_MESSAGE" value="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610585523439">
+    <state x="0" y="0" width="816" height="728" key="#Intentions" timestamp="1611434672557">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1610585523439" />
+    <state x="0" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1611434672557" />
+    <state x="274" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611361748950">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="274" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1611361748950" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1611327696214">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611327696214" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611440106154">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611440106154" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611245769173">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611245769173" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611337549524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1366.728@0.0.1366.728" timestamp="1611337549524" />
+    <state x="600" y="118" key="FileChooserDialogImpl" timestamp="1611361776828">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="600" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611361776828" />
     <state width="1328" height="169" key="GridCell.Tab.0.bottom" timestamp="1610586834274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -237,17 +470,29 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1610585321675" />
-    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1610596401687">
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1611485718319">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1610596401687" />
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611485718319" />
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1611366439407">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1366.728@0.0.1366.728" timestamp="1611366439407" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1610585365005">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610585365005" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1610585831908">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1611091951416">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1610585831908" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611091951416" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1611366439418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611366439418" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611168592879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611168592879" />
   </component>
 </project>

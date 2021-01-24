@@ -1,4 +1,4 @@
-<?php
+<? php
 ## 1 - Ambiente de Desenvolvimento Atualizando/instalando o Laravel
 - Instale o Composer
     https://getcomposer.org/download/
@@ -158,6 +158,73 @@ Please run "npm install && npm run dev" to compile your fresh scaffolding.
 Authentication scaffolding generated successfully.
 
 
+
+
+
+ php artisan make:controller Site\SiteController
+ php artisan make:controller Cart\CartController
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\Slide
+ Model created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:controller Admin\PaginasController
+ Controller created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:controller Admin\PapelController
+ Controller created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:controller Admin\SlideController
+ Controller created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:controller Admin\UsuarioController
+ Controller created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\Pagina
+ Model created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:controller Pessoa\PessoaController
+ Controller created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\Papel
+ Model created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\Papel_user
+ Model created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\PapelPermissao
+ Model created successfully.
+ 
+ C:\xampp\htdocs\arrudacalcados (main -> origin)
+ λ php artisan make:model Admin\Permissao
+ Model created successfully.
+ 
+ # Gerando Migrações comando Ex:  php artisan make:migration create_users_table
+ # Migração para administração de Usuários
+ 
+ php artisan make:migration create_paginas_table
+ php artisan make:migration create_slides_table
+ 
+  
+ php artisan make:migration create_permissaos_table
+ php artisan make:migration create_papels_table
+ php artisan make:migration create_papel_users_table
+ php artisan make:migration create_pessoas_table
+ php artisan make:migration Create_PapelPermissao_Table
+ 
+
+
+
+ 
+ 
 composer dump-autoload --optimize
 composer dump-autoload -o
 php artisan route:clear
@@ -168,6 +235,3 @@ php artisan route:cache
 user admin
 email admin@arruda.com.br
 pass 12345678
-
- php artisan make:controller Site\SiteController
- php artisan make:controller Cart\CartController

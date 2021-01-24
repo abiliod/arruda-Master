@@ -1,36 +1,52 @@
 @extends('layouts._site.app')
 @section('content')
-
     <div class="breadcrumbs">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="bread"><span><a href="{{ route('index') }}">Home</a></span> / <span>About</span></p>
+                    <p class="bread"><span><a href="{{ route('index') }}">Home</a></span> / <span class="active">About</span></p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="colorlib-about">
-        <div class="container">
-            <div class="row row-pb-lg">
-                <div class="col-sm-6 mb-3">
-                    <div class="video colorlib-video" style="background-image: url(images/about.jpg);">
-                        <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play3"></i></a>
-                        <div class="overlay"></div>
-                    </div>
+    <div class="container  #fafafa grey lighten-5">
+         @if(!empty(  $pagina->id ))
+            <div class="row section #e3f2fd blue lighten-5">
+                <div class="col s12 m6">
+                    @if(isset($pagina->mapa))
+                        <div class="video-container">
+                            {!! $pagina->mapa !!}
+                        </div>
+                    @else
+                        <img class="responsive-img" src="{{ asset($pagina->imagem) }}">
+                    @endif
                 </div>
-                <div class="col-sm-6">
-                    <div class="about-wrap">
-                        <h2>Footwear the leading eCommerce Store around the Globe</h2>
-                        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-                    </div>
+                <div class="col s12 m6">
+                    <h4>{{ $pagina->titulo }}</h4>
+                    <blockquote>
+                        {{ $pagina->descricao }}
+                    </blockquote>
+                    <p>{{ $pagina->texto }}</p>
                 </div>
             </div>
-        </div>
+        @else
+            <div class="row section #e3f2fd blue lighten-5">
+                <div class="col s12 m6">
+                    @if(isset($pagina->mapa))
+                        <div class="video-container">
+                            {!! $pagina->mapa !!}
+                        </div>
+                    @else
+                        <h4>não há registros</h4>
+                    @endif
+                </div>
+                <div class="col s12 m6">
+                    <blockquote>
+                    </blockquote>
+                </div>
+            </div>
+        @endif
     </div>
-
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="ion-ios-arrow-up"></i></a>
     </div>
