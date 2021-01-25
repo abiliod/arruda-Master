@@ -31,7 +31,7 @@
 		</div>
 		<div class="file-path-wrapper">
 			<input type="text" class="file-path validade">
-		</div>		
+		</div>
 	</div>
 	<div class="col m6 s12">
 		<img width="120" src="{{ asset($registro->imagem) }}">
@@ -39,14 +39,16 @@
 </div>
 @else
 <div class="row">
+
 	<div class="file-field input-field col m12 s12">
+        <p class="center">Você pode selecionar várias imagens para esse controle.</p>
 		<div class="btn">
 			<span>Upload de Imagens</span>
 			<input type="file" multiple name="imagens[]">
 		</div>
 		<div class="file-path-wrapper">
 			<input type="text" class="file-path validade">
-		</div>      
-	</div>    
+		</div>
+	</div>
 </div>
 @endif

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Slide;
 use Illuminate\Http\Request;
 
 class SlideController extends Controller
@@ -10,6 +11,7 @@ class SlideController extends Controller
     public function index()
     {
         $registros = Slide::orderBy('ordem')->get();
+
         return view('admins.slides.index',compact('registros'));
     }
 

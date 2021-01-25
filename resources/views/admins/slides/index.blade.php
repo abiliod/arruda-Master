@@ -1,18 +1,23 @@
-@extends('layouts._gynPromo.app')
+@extends('layouts._admin.app')
 <!-- 26022020 inclusao da funcionalidade Slide-->
 @section('content')
 <div class="container">
-	<h2 class="center">Lista de Slides</h2>
-	<div class="row">
-		<nav>
-			<div class="nav-wrapper green">
-				<div class="col s12">
-					<a href="{{ route('home')}}" class="breadcrumb">Início</a>
-					<a class="breadcrumb">Lista de Slides</a>
-				</div>
-			</div>
-		</nav>
-	</div>
+
+    <h2 class="center">Lista de Slides</h2>
+    <div class="row #4db6ac teal lighten-2 ">
+        <nav >
+            <div class="nav-wrapper #4db6ac teal lighten-2">
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="{{route('home')}}">Início</a></li>
+                    <li class="active"><a href="#">Lista de Slides</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
 	<div class="row">
 
 		<table>
