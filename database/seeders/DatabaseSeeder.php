@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
         // inclusao de Paginas Administrativas Sobre e Contato
 
         $this->call([
-            PaginasTableSeeder::class,
+          //  PaginasTableSeeder::class,
+            ProductSeeder::class,
 
         ]);
 
