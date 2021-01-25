@@ -25,11 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
-      <change afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" afterDir="false" />
+    <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/excel/Pasta1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,6 +293,11 @@
       <workItem from="1611508866228" duration="1840000" />
       <workItem from="1611510751152" duration="1779000" />
       <workItem from="1611512564414" duration="1780000" />
+      <workItem from="1611514377444" duration="453000" />
+      <workItem from="1611530991308" duration="1439000" />
+      <workItem from="1611532868357" duration="1780000" />
+      <workItem from="1611534782523" duration="1785000" />
+      <workItem from="1611536611390" duration="1036000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -321,7 +327,21 @@
       <option name="project" value="LOCAL" />
       <updated>1611514329499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="24/01/21- criação do modelo de produto.">
+      <created>1611514416541</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611514416541</updated>
+    </task>
+    <task id="LOCAL-00006" summary="24/01/21- atualização.">
+      <created>1611514461533</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611514461533</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +375,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade." />
     <MESSAGE value="24/01/21- Criaçãoda migrate para produtos." />
-    <option name="LAST_COMMIT_MESSAGE" value="24/01/21- Criaçãoda migrate para produtos." />
+    <MESSAGE value="24/01/21- criação do modelo de produto." />
+    <MESSAGE value="24/01/21- atualização." />
+    <option name="LAST_COMMIT_MESSAGE" value="24/01/21- atualização." />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="816" height="728" key="#Intentions" timestamp="1611434672557">
@@ -374,10 +396,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611440106154" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611514328041">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611514460574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611514328041" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611514460574" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611337549524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -418,10 +440,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1610585365005" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1611514331996">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1611514463857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611514331996" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611514463857" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1611366439418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

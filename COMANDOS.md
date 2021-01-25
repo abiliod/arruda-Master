@@ -157,10 +157,6 @@ Vue scaffolding installed successfully.
 Please run "npm install && npm run dev" to compile your fresh scaffolding.
 Authentication scaffolding generated successfully.
 
-
-
-
-
  php artisan make:controller Site\SiteController
  php artisan make:controller Cart\CartController
  C:\xampp\htdocs\arrudacalcados (main -> origin)
@@ -234,7 +230,21 @@ Migrating: 2021_01_24_145355_create_products_table
 Migrated:  2021_01_24_145355_create_products_table (258.01ms)
 
 
+ # Gerando Semeadores.
+ Para gerar um semeador, execute o comando Artisan,
+ php artisan make:seeder < NomearquivoSeeder > .
  
+  php artisan make:seeder ProductSeeder
+ 
+ Todos os semeadores gerados pela estrutura serão colocados no diretório:make:seeder database/seeds
+ 
+ Você pode executar o db:seedcomando Artisan para propagar seu banco de dados. Por padrão, o db:seedcomando executa a Database\Seeders\DatabaseSeederclasse, que pode, por sua vez, invocar outras classes de semente. No entanto, você pode usar a --classopção de especificar uma classe de semeador específica para ser executada individualmente:
+ 
+ php artisan db:seed
+ 
+ php artisan db:seed --class=ProductSeeder
+ 
+
  
 composer dump-autoload --optimize
 composer dump-autoload -o
