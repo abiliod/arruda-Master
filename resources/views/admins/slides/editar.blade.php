@@ -3,15 +3,13 @@
 @section('content')
 <div class="container">
 	<h2 class="center">Editar Slide</h2>
-
     <div class="row #4db6ac teal lighten-2 ">
-        <nav >
+        <nav>
             <div class="nav-wrapper #4db6ac teal lighten-2">
                 <ul class="left hide-on-med-and-down">
                     <li><a href="{{route('home')}}">Início</a></li>
                     <li><a href="{{route('admins.slides')}}">Lista de Slide</a></li>
                     <li class="active"><a href="#">Edição de Slide</a></li>
-
                 </ul>
             </div>
         </nav>
@@ -24,6 +22,7 @@
 			@include('admins.slides._form')
 			<button class="btn blue">Atualizar</button>
 		</form>
-	</div>
+    </div>
+
 </div>
 @endsection

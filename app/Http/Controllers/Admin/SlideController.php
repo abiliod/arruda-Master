@@ -31,6 +31,7 @@ class SlideController extends Controller
         {
             $ordemAtual = 0;
         }
+
         if($request->hasFile('imagens'))
         {
             $arquivos = $request->file('imagens');

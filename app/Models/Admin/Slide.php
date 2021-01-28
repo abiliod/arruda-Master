@@ -8,3 +8,4 @@ class Slide extends Model
 {
 
 }
+

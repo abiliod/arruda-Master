@@ -95,3 +95,5 @@ jQuery(function($){
     $("#money6dig").mask("9.999999");
 
 });
+
+

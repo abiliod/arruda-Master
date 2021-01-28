@@ -1,25 +1,5 @@
 {
-    "name": "ArrudaCalçados",
-    "type": "project",
-    "description": "Arruda Calçados.",
-    "keywords": [
-        "Calçados",
-        "Fabricante Calçados Feinino"
-    ],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Abilio Dias Ferreira",
-            "email": "abiliobonito@gmail.com",
-            "role": "Developer",
-            "homepage": "abilio.adm.br",
 
-            "name": "Yuri Dumont",
-            "email": "yuri... @gmail.com",
-            "role": "Developer",
-            "homepage": ""
-        }
-    ],
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",

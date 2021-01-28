@@ -17,12 +17,12 @@
         </nav>
     </div>
 
-	<div class="row">
+	<div class="row"> 	</div>
 		<form action="{{ route('admins.slides.salvar') }}" method="post" enctype="multipart/form-data">
 			{{csrf_field()}}
 			@include('admins.slides._form')
 			<button class="btn blue">Adicionar</button>
 		</form>
-	</div>
+
 </div>
 @endsection

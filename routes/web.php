@@ -1,14 +1,20 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Site\SiteController;
-use App\Http\Controllers\Cart\CartController;
-
 use App\Http\Controllers\Site\PaginaController;
+use App\Http\Controllers\Admin\PaginasController;
 use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\Admin\SlideController;
-use App\Http\Controllers\Admin\PaginasController;
+use App\Http\Controllers\Product\ProductController;
+
+
+
+
+use App\Http\Controllers\Cart\CartController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -62,4 +68,24 @@ Route::get('/admins/slides/editar/{id}', [SlideController::class, 'editar'])->na
 Route::get('/admins/slides/deletar/{id}', [SlideController::class, 'deletar'])->name('admins.slides.deletar');
 Route::put('/admins/slides/atualizar/{id}', [SlideController::class, 'atualizar'])->name('admins.slides.atualizar');
 
+//Administando Produtos do site
 
+Route::get('/admins/products/create', [ProductController::class, 'create'])->name('admins.products.create');
+Route::post('/admins/products/store', [ProductController::class, 'store'])->name('admins.products.store');
+Route::get('/admins/products/edit/{id}', [ProductController::class, 'edit'])->name('admins.products.edit');
+Route::put('/admins/products/update/{id}', [ProductController::class, 'update'])->name('admins.products.update');
+Route::get('/admins/products/destroy{id}', [ProductController::class, 'destroy'])->name('admins.products.destroy');
+Route::get('/admins/products/destroyfiles/{id}', [ProductController::class, 'destroyfiles'])->name('admins.products.destroyfiles');
+Route::post('/admins/products/{search?}', [ProductController::class, 'search'])->name('admins.products.search');
+Route::get('/admins/products', [ProductController::class, 'index'])->name('admins.products');
+
+
+/**
+ * index – Lista os dados da tabela
+ * create – Retorna a View para criar um item da tabela
+ * show – Mostra um item específico
+ * store – Salva o novo item na tabela
+ * edit – Retorna a View para edição do dado
+ * update – Salva a atualização do dado
+ * destroy – Remove o dado
+ */

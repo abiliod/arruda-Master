@@ -214,6 +214,11 @@ Authentication scaffolding generated successfully.
  php artisan make:migration create_papel_users_table
  php artisan make:migration create_pessoas_table
  php artisan make:migration Create_PapelPermissao_Table
+  php artisan make:migration Create_modelos_Table
+  
+ alterando a tabela  adicionando campos
+ php artisan make:migration add_campos_table_colecoes --table=colecoes
+ php artisan make:migration add_campos_table_modelos --table=modelos
  
  
  php artisan make:model Product\Product -m
@@ -229,7 +234,8 @@ C:\xampp\htdocs\arrudacalcados (main -> origin)
 Migrating: 2021_01_24_145355_create_products_table
 Migrated:  2021_01_24_145355_create_products_table (258.01ms)
 
-
+ php artisan make:migration add_campos_table_products --table=products
+ 
  # Gerando Semeadores.
  Para gerar um semeador, execute o comando Artisan,
  php artisan make:seeder < NomearquivoSeeder > .
@@ -243,6 +249,31 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
  php artisan db:seed
  
  php artisan db:seed --class=ProductSeeder
+ 
+ λ php artisan make:controller Product\ProductController --resource
+ Controller created successfully.
+ 
+
+  php artisan make:model Product\Colecao
+  php artisan make:model Product\Modelo
+  
+
+  palmilha
+  
+   'composicao'  //[NOBUQUE, CAMURÇA, VERNIZ, NAPA FLORAL...]
+
+         
+          , 'numeracao_br'   // ex.  33
+          , 'numeracao_eua'  // ex.  8 convertido para americano
+          , 'tamanho'     // tamanho [medio,grande]
+          , 'altura'
+          , 'genero'     // [MASCULINO, FEMININO, UNISSEX]
+          , 'cor'        // [ PRETO,BRANCO,MARFIM]
+          , 'palmilha'   // [CONFORT,TRADICIONAL PRETO BEJE MARFIM]
+          , 'modelo'     // [scarpin, ana bela, sapatilha, plataforma ,...]
+          , 'acessorios' // [extrais, spaike, ilhos, cardaço....]
+          , 'salto'       // [fino, bloco, taça,]
+          , 'solado'    // [ pvc, tr, sofort]
  
 
  

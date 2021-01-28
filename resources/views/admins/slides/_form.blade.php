@@ -12,18 +12,24 @@
 	<input type="text" name="link" class="validade" value="{{ isset($registro->link) ? $registro->link : '' }}">
 	<label>Link</label>
 </div>
-<div class="input-field">
+<div class="input-field col s6">
+    <select name="publicado">
+        <option value="nao" {{(isset($registro->publicado) && $registro->publicado == 'nao'  ? 'selected' : '')}}>Não</option>
+        <option value="sim" {{(isset($registro->publicado) && $registro->publicado == 'sim'  ? 'selected' : '')}}>Sim</option>
+    </select>
+    <label for="publicado"> Publicar?</label>
+</div>
+
+<div class="input-fieldcol s6 ">
 	<input type="text" name="ordem" class="validade" value="{{ isset($registro->ordem) ? $registro->ordem : '' }}">
 	<label>Ordem</label>
 </div>
-<div class="input-field">
-	<select name="publicado">
-		<option value="nao" {{(isset($registro->publicado) && $registro->publicado == 'nao'  ? 'selected' : '')}}>Não</option>
-		<option value="sim" {{(isset($registro->publicado) && $registro->publicado == 'sim'  ? 'selected' : '')}}>Sim</option>
-	</select>
-	<label>Publicar?</label>
-</div>
-<div class="row">
+
+
+
+
+
+<div class="row col s12">
 	<div class="file-field input-field col m6 s12">
 		<div class="btn">
 			<span>Imagem</span>
@@ -38,9 +44,8 @@
 	</div>
 </div>
 @else
-<div class="row">
 
-	<div class="file-field input-field col m12 s12">
+	<div class="file-field input-field col m6 s12">
         <p class="center">Você pode selecionar várias imagens para esse controle.</p>
 		<div class="btn">
 			<span>Upload de Imagens</span>
@@ -50,5 +55,5 @@
 			<input type="text" class="file-path validade">
 		</div>
 	</div>
-</div>
+
 @endif
