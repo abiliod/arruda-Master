@@ -21,7 +21,7 @@
                         <li class="has-dropdown active">
                             <a href="{{ route('men') }}">Masculino</a>
                             <ul class="dropdown">
-                                <li><a href="{{ route('product_detail') }}">Product Detail</a></li>
+{{--                                <li><a href="{{ route('product_detail') }}">Product Detail</a></li>--}}
                                 <li><a href="{{ route('cart') }}">Shopping Cart</a></li>
                                 <li><a href="{{ route('checkout') }}">Checkout</a></li>
                                 <li><a href="{{ route('order_complete') }}">Order Complete</a></li>

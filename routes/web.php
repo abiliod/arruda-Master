@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\Product\VariacaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Site\PaginaController;
@@ -36,7 +37,7 @@ Route::get('/welcome', [CartController::class, 'index'])->name('index');
 Route::get('/about_site', [CartController::class, 'sobre'])->name('sobre');
 Route::get('/contact_site', [CartController::class, 'contato'])->name('contato');
 Route::get('/cart_site', [CartController::class, 'cart'])->name('cart');
-Route::get('/product_detail', [CartController::class, 'product_detail'])->name('product_detail');
+Route::get('/product_detail/{id}', [CartController::class, 'product_detail'])->name('product_detail');
 Route::get('/checkout_site', [CartController::class, 'checkout'])->name('checkout');
 Route::get('/order_complete', [CartController::class, 'order_complete'])->name('order_complete');
 Route::get('/add_to_wishlist', [CartController::class, 'add_to_wishlist'])->name('add_to_wishlist');
@@ -78,6 +79,16 @@ Route::get('/admins/products/destroy{id}', [ProductController::class, 'destroy']
 Route::get('/admins/products/destroyfiles/{id}', [ProductController::class, 'destroyfiles'])->name('admins.products.destroyfiles');
 Route::post('/admins/products/{search?}', [ProductController::class, 'search'])->name('admins.products.search');
 Route::get('/admins/products', [ProductController::class, 'index'])->name('admins.products');
+
+
+Route::put('/admins/variacoes/update/{id}', [VariacaoController::class, 'update'])->name('admins.variacoes.update');
+Route::post('/admins/variacoes/store', [VariacaoController::class, 'store'])->name('admins.variacoes.store');
+Route::get('/admins/variacoes/create/{id}', [VariacaoController::class, 'create'])->name('admins.variacoes.create');
+Route::get('/admins/variacoes/edit/{id}', [VariacaoController::class, 'edit'])->name('admins.variacoes.edit');
+Route::get('/admins/variacoes/destroy/{id}', [VariacaoController::class, 'destroy'])->name('admins.variacoes.destroy');
+Route::post('/admins/variacoes/{search?}', [VariacaoController::class, 'search'])->name('admins.variacoes.search');
+Route::get('/admins/variacoes/{id}', [VariacaoController::class, 'index'])->name('admins.variacoes');
+
 
 
 /**

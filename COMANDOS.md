@@ -220,6 +220,11 @@ Authentication scaffolding generated successfully.
  php artisan make:migration add_campos_table_colecoes --table=colecoes
  php artisan make:migration add_campos_table_modelos --table=modelos
  
+ php artisan make:migration alter_campos_table_products --table=products
+ php artisan make:migration add_campoeindex_table_products --table=products
+ 
+ php artisan make:migration add_campopeso_table_variacoes --table=variacoes
+ 
  
  php artisan make:model Product\Product -m
  php artisan make:controller Product\ProductController
@@ -235,12 +240,15 @@ Migrating: 2021_01_24_145355_create_products_table
 Migrated:  2021_01_24_145355_create_products_table (258.01ms)
 
  php artisan make:migration add_campos_table_products --table=products
+ php artisan make:migration rename_table_manequims --table=manequims
+
  
  # Gerando Semeadores.
  Para gerar um semeador, execute o comando Artisan,
  php artisan make:seeder < NomearquivoSeeder > .
  
   php artisan make:seeder ProductSeeder
+  php artisan make:seeder ManequimSeeder
  
  Todos os semeadores gerados pela estrutura serão colocados no diretório:make:seeder database/seeds
  
@@ -275,13 +283,15 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
           , 'salto'       // [fino, bloco, taça,]
           , 'solado'    // [ pvc, tr, sofort]
  
+ 
+ Request\StoreVariacoes
 
  
 composer dump-autoload --optimize
 composer dump-autoload -o
 php artisan route:clear
-php artisan route:list
 php artisan route:cache
+php artisan route:list
 
 
 user admin

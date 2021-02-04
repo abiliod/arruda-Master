@@ -3,12 +3,43 @@
 namespace App\Http\Controllers\Cart;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product\Colecao;
+use App\Models\Product\Modelo;
+use App\Models\Product\Product;
 use Illuminate\Http\Request;
 use App\Models\Admin\Pagina;
+use Illuminate\Support\Facades\DB;
 
 class CartController extends Controller
 {
 
+    /**
+     * @param $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function product_detail($id)
+    {
+        $registro = Product::find($id);
+        $modelos = Modelo::all();
+        $colecaos = Colecao::all();
+          return view('product_detail', compact('registro', 'modelos','colecaos'));
+    }
+
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function index()
+    {
+        $modelos = Modelo::all();
+        $colecaos = Colecao::all();
+        $registros = DB::table('products')
+            ->join('modelos', 'products.modelo_id', '=', 'modelos.id')
+            ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
+            ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
+            ->paginate(16);
+        return view('welcome', compact('registros', 'modelos','colecaos'));
+
+    }
 
     public function add_to_wishlist() //
     {
@@ -22,10 +53,7 @@ class CartController extends Controller
     {
         return view('checkout_site');
     }
-    public function product_detail() //
-    {
-        return view('product_detail');
-    }
+
     public function cart() //
     {
         return view('cart_site');
@@ -60,8 +88,5 @@ class CartController extends Controller
         // filtrar por genero masculino
         return view('welcome');
     }
-    public function index()
-    {
-        return view('welcome');
-    }
+
 }

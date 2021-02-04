@@ -1,16 +1,15 @@
 $( document ).ready(function()
 {
-
     $(".button-collapse").sideNav();
     $(".dropdown-button").dropdown();
     $(".slider").slider({full_width:true});
     $("select").material_select('destroy');
     $('select').material_select();
     $('.modal').modal();
+    $('#textarea1').val('New Text');
+    $('#textarea1').trigger('autoresize');
     Materialize.updateTextFields();
     M.AutoInit();
-     $('#textarea1').val('New Text');
-     $('#textarea1').trigger('autoresize');
 });
 
 // $('.datepicker').pickadate({

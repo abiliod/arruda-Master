@@ -29,7 +29,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <title>{{ config('app.name', 'GynPromo') }}</title>
+    <title>{{ config('app.name', 'Arruda Calçados') }}</title>
 </head>
 <body" >
 <header >
@@ -90,5 +90,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script src="{{asset('js/init.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
+
 </body>
 </html>

@@ -26,51 +26,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/StoreProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Request/StoreProduct.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product/Colecao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product/Modelo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_075229_create_colecaos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_152903_create_modelos__table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_180423_add_campos_table_modelos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_180547_add_campos_table_colecoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_27_205836_add_campos_table_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/41/DTFT53_20210127205253_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/41/DTFT53_20210127205253_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/41/DTFT53_20210127205253_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/42/DTFT54_20210127213115_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/42/DTFT54_20210127213116_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/42/DTFT54_20210127213116_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/42/DTFT54_20210127213116_4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/_img_22112.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/_img_37370.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/slides/_img_59474.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_slides.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Product/Variacao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_185938_create_variacoes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_093048_alter_campos_table_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_155349_add_campoeindex_table_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/ManequimSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/amarelo-medio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/amarelo-ouro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-ceu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-marinho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-medio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/bordô.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/branco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/cinza-claro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/cinza-escuro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/laranja.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/marron.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/ouro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/pink.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/prata.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/preto-fosco.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/preto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/rosa-claro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-abacate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-amazonas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-escuro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/data-icon/vermelho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/capa/DTFT53_20210203122325_capa_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/12/capa/xpi53_20210203165121_capa_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/arrudacalcados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/arrudacalcados.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SlideController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SlideController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin/Slide.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin/Slide.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/StoreProduct.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Request/StoreProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Request/StoreProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/SlidesService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/SlidesService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_24_145355_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_165355_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_075229_create_colecaos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_075229_create_colecaos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_165355_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_165355_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_27_205836_add_campos_table_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_091949_add_campos_table_products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/google_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/google_map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/categorias/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/categorias/adicionar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/categorias/editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/categorias/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/slides/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/slides/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/slides/adicionar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/slides/adicionar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/slides/editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/slides/editar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,6 +225,9 @@
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
     </include_path>
   </component>
   <component name="ProjectId" id="1n2OAOI0QMQ6U1Eoll120k1arlA" />
@@ -216,25 +243,25 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admins/products" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admins/products/manequins" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\paginas" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_admin" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admin" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products\manequins" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
       <recent name="C:\xampp\htdocs\arrudacalcados\database\seeders" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\arrudacalcados\public" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\variacoes" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\assets\images" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Product" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins" />
     </key>
   </component>
   <component name="RunManager">
@@ -393,7 +420,108 @@
       <workItem from="1611793644080" duration="1782000" />
       <workItem from="1611795486992" duration="1784000" />
       <workItem from="1611797313715" duration="1160000" />
-      <workItem from="1611825233190" duration="975000" />
+      <workItem from="1611825233190" duration="4063000" />
+      <workItem from="1611836137589" duration="1513000" />
+      <workItem from="1611838068604" duration="1899000" />
+      <workItem from="1611840002065" duration="1669000" />
+      <workItem from="1611841814444" duration="1783000" />
+      <workItem from="1611843630890" duration="1611000" />
+      <workItem from="1611846010657" duration="4278000" />
+      <workItem from="1611852906677" duration="1712000" />
+      <workItem from="1611873561152" duration="1671000" />
+      <workItem from="1611875391354" duration="612000" />
+      <workItem from="1611881780181" duration="1693000" />
+      <workItem from="1611883599151" duration="2059000" />
+      <workItem from="1611885697121" duration="1783000" />
+      <workItem from="1611887514504" duration="1608000" />
+      <workItem from="1611890192923" duration="1788000" />
+      <workItem from="1611922669132" duration="99000" />
+      <workItem from="1612033121112" duration="1753000" />
+      <workItem from="1612037059120" duration="1558000" />
+      <workItem from="1612042856722" duration="1125000" />
+      <workItem from="1612046275721" duration="1028000" />
+      <workItem from="1612085225261" duration="1814000" />
+      <workItem from="1612087079486" duration="3444000" />
+      <workItem from="1612092845790" duration="2022000" />
+      <workItem from="1612094901007" duration="1783000" />
+      <workItem from="1612096713218" duration="1613000" />
+      <workItem from="1612098840248" duration="590000" />
+      <workItem from="1612128048919" duration="1778000" />
+      <workItem from="1612130347271" duration="3001000" />
+      <workItem from="1612133384564" duration="1772000" />
+      <workItem from="1612135203930" duration="1785000" />
+      <workItem from="1612137565845" duration="806000" />
+      <workItem from="1612181990206" duration="1053000" />
+      <workItem from="1612184160469" duration="1784000" />
+      <workItem from="1612185979694" duration="1782000" />
+      <workItem from="1612187795724" duration="1220000" />
+      <workItem from="1612198278231" duration="1778000" />
+      <workItem from="1612200102010" duration="1778000" />
+      <workItem from="1612201932088" duration="1797000" />
+      <workItem from="1612203759039" duration="1784000" />
+      <workItem from="1612205572125" duration="1787000" />
+      <workItem from="1612207400481" duration="1786000" />
+      <workItem from="1612209212879" duration="1350000" />
+      <workItem from="1612218154744" duration="1227000" />
+      <workItem from="1612219970873" duration="1393000" />
+      <workItem from="1612222911080" duration="1179000" />
+      <workItem from="1612224971660" duration="1787000" />
+      <workItem from="1612226790046" duration="1784000" />
+      <workItem from="1612228608447" duration="1785000" />
+      <workItem from="1612230442143" duration="1211000" />
+      <workItem from="1612257008542" duration="1697000" />
+      <workItem from="1612266033332" duration="1791000" />
+      <workItem from="1612267953711" duration="1390000" />
+      <workItem from="1612269813063" duration="1796000" />
+      <workItem from="1612271642783" duration="1782000" />
+      <workItem from="1612273454656" duration="1784000" />
+      <workItem from="1612275312487" duration="1793000" />
+      <workItem from="1612277131494" duration="1785000" />
+      <workItem from="1612278986463" duration="740000" />
+      <workItem from="1612284769320" duration="1793000" />
+      <workItem from="1612286854350" duration="863000" />
+      <workItem from="1612289019665" duration="1785000" />
+      <workItem from="1612290841720" duration="1782000" />
+      <workItem from="1612292652690" duration="1782000" />
+      <workItem from="1612294470255" duration="1782000" />
+      <workItem from="1612296280777" duration="1783000" />
+      <workItem from="1612303524966" duration="1783000" />
+      <workItem from="1612305337075" duration="1785000" />
+      <workItem from="1612307819154" duration="1782000" />
+      <workItem from="1612309630646" duration="2396000" />
+      <workItem from="1612312052998" duration="1789000" />
+      <workItem from="1612313877517" duration="1787000" />
+      <workItem from="1612315710901" duration="1793000" />
+      <workItem from="1612317535655" duration="290000" />
+      <workItem from="1612321467181" duration="1784000" />
+      <workItem from="1612323282902" duration="1823000" />
+      <workItem from="1612325136750" duration="3485000" />
+      <workItem from="1612352523527" duration="1195000" />
+      <workItem from="1612354560580" duration="1785000" />
+      <workItem from="1612356383993" duration="1791000" />
+      <workItem from="1612358275986" duration="1782000" />
+      <workItem from="1612360097152" duration="1813000" />
+      <workItem from="1612361964527" duration="1921000" />
+      <workItem from="1612363925582" duration="1805000" />
+      <workItem from="1612365773605" duration="1564000" />
+      <workItem from="1612370438727" duration="1782000" />
+      <workItem from="1612372257109" duration="1258000" />
+      <workItem from="1612374093444" duration="1784000" />
+      <workItem from="1612375923946" duration="1795000" />
+      <workItem from="1612377760835" duration="1785000" />
+      <workItem from="1612379634148" duration="1784000" />
+      <workItem from="1612381480278" duration="1783000" />
+      <workItem from="1612383291728" duration="1900000" />
+      <workItem from="1612385228563" duration="843000" />
+      <workItem from="1612391081001" duration="1001000" />
+      <workItem from="1612393402274" duration="1447000" />
+      <workItem from="1612395274079" duration="2526000" />
+      <workItem from="1612398030353" duration="1790000" />
+      <workItem from="1612400705245" duration="1632000" />
+      <workItem from="1612402861578" duration="959000" />
+      <workItem from="1612429982724" duration="1719000" />
+      <workItem from="1612431788839" duration="1973000" />
+      <workItem from="1612433800568" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -527,18 +655,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="274" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1611361748950" />
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1611759856794">
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1612096808178">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1611759856794" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1612096808178" />
     <state x="377" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1611635752348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="377" y="153" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1611635752348" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611633116904">
+    <state x="356" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612220242748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611633116904" />
+    <state x="356" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1612220242748" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612296304443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612296304443" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611583890106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -571,14 +703,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1610585321675" />
-    <state x="418" y="86" key="NewPhpClassDialog" timestamp="1611635816741">
+    <state x="713" y="56" key="NewPhpClassDialog" timestamp="1612277982348">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="418" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1611635816741" />
-    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1611584280713">
+    <state x="713" y="56" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1612277982348" />
+    <state x="518" y="286" key="NewPhpFileDialog" timestamp="1612277895449">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611584280713" />
+    <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612277895449" />
     <state x="503" y="65" key="RollbackChangesDialog" timestamp="1611583792208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -595,22 +727,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611583893945" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1611366439418">
+    <state x="339" y="157" key="run.anything.popup" timestamp="1611841784864">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611366439418" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611634092024">
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611841784864" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1612199302238">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611634092024" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612199302238" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/admins/products/_form.blade.php</url>
-          <line>71</line>
-          <option name="timeStamp" value="1" />
+          <line>263</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

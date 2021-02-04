@@ -14,8 +14,7 @@ class AddCamposTableProducts extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('sub_category')->after('colecao_id');
-            $table->mediumText('directory')->nullable()->after('imagem');
+            $table->string('directory_capa')->nullable()->after('directory');
         });
     }
 
@@ -27,8 +26,7 @@ class AddCamposTableProducts extends Migration
     public function down()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->dropColumn('sub_category');
-            $table->dropColumn('directory');
+            $table->dropColumn('directory_capa');
         });
     }
 }

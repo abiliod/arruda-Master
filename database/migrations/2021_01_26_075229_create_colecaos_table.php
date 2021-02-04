@@ -18,6 +18,7 @@ class CreateColecaosTable extends Migration
             $table->string('colecao_description');
             $table->timestamps();
         });
+
     }
 
     /**

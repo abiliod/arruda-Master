@@ -2,7 +2,12 @@
 
 namespace App\Providers;
 
+use Carbon\Carbon;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use phpDocumentor\Reflection\Types\AggregatedType;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+        Carbon::setLocale('pt_BR');
+        Paginator::useBootstrap();
 
     }
 }

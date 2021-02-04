@@ -1,8 +1,9 @@
 @extends('layouts._site.app')
-@section('content')
 
+@section('content')
+    @include('layouts._site._navHhasLogin')
     <div id="page">
-         <div class="breadcrumbs">
+        <div class="breadcrumbs">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -11,7 +12,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="colorlib-product">
             <div class="container">

@@ -13,7 +13,15 @@
                     </div>
                 </nav>
             </div>
-
+            @if($errors->any())
+                <div class="row col-12 red">
+                    <ul class="left hide-on-med-and-down">
+                        @if ($errors->all())
+                            <li> Opa, parece que algo deu errado. </li>
+                        @endif
+                    </ul>
+                </div>
+            @endif
             <form action="{{ route('admins.products.store') }}" method="post">
             {{csrf_field()}}
                 @include('admins.products._form')
