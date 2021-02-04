@@ -72,7 +72,8 @@
     </div>
 
     <div class="input-field col-sm-2">
-        <input type="number" min="1" step="any"  placeholder=" EX: 53,25"  id="peso_liq" name="peso_liq" class="validate"
+        <input type="number" min="0.101" max="0.499" step="any"  placeholder=" EX: 0,350"  id="peso_liq"
+               name="peso_liq" class="validate"
                value="{{ isset($registro->peso_liq) ? $registro->peso_liq : old('peso_liq') }}">
         <label for="peso_liq" Class="@if ($errors->has('peso_liq')) text-danger @endif">
             @if ($errors->has('peso_liq')) {{ $errors->first('peso_liq') }}
@@ -80,7 +81,7 @@
     </div>
 
     <div class="input-field col-sm-2">
-        <input type="number" min="1" step="any"  placeholder=" EX: 53,25"  id="peso_bruto" name="peso_bruto" class="validate"
+        <input type="number"  min="0.101" max="0.499" step="any" step="any"  placeholder=" EX: 0,350"  id="peso_bruto" name="peso_bruto" class="validate"
                value="{{ isset($registro->peso_bruto) ? $registro->peso_bruto : old('peso_bruto') }}">
         <label for="peso_liq" Class="@if ($errors->has('peso_bruto')) text-danger @endif">
             @if ($errors->has('peso_bruto')) {{ $errors->first('peso_bruto') }}

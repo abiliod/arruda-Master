@@ -62,17 +62,20 @@
                     @endforeach
                     </tbody>
                 </table>
-                <nav class="#26a69a" >
-                    {{--                {!! $registros->render() !!}--}}
+{{--                {!! $registros->render() !!}--}}
 {{--                    {!! $variacoes->links() !!}--}}
-                      {{ $registros->onEachSide(5)->links() }}
-                </nav>
+                      {{ $variacoes->onEachSide(5)->links() }}
+
             @else
                 <p>
                    <span class="h2">Variação não localizada.</span>
-                    <span class="h6">Ref: {{$registro->referencia}}, Categoria: {{$registro->sub_category}}, Descrição: {{$registro->descricao}}a.</span>
-                   <a class="btn blue" href="{{route('admins.variacoes.create',$id)}}">Adicionar</a>
+
                 </p>
             @endif
+
+                <p>
+                    <a class="btn blue" href="{{route('admins.variacoes.create',$id)}}">Adicionar</a>
+                </p>
+
         </div>
 @endsection

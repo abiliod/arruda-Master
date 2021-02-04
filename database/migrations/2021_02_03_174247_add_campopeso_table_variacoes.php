@@ -14,9 +14,8 @@ class AddCampopesoTableVariacoes extends Migration
     public function up()
     {
         Schema::table('variacoes', function (Blueprint $table) {
-            $table->decimal('peso_liq', $precision = 8, $scale = 2);
-
-            $table->decimal('peso_bruto', $precision = 8, $scale = 2);
+            $table->decimal('peso_liq', $precision = 5, $scale = 3);
+            $table->decimal('peso_bruto', $precision = 5, $scale = 3);
         });
     }
 

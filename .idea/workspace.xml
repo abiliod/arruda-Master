@@ -26,76 +26,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Product/Variacao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_31_185938_create_variacoes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_093048_alter_campos_table_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_155349_add_campoeindex_table_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ManequimSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/amarelo-medio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/amarelo-ouro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-ceu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-marinho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/azul-medio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/bordô.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/branco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/cinza-claro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/cinza-escuro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/laranja.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/marron.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/ouro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/pink.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/prata.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/preto-fosco.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/preto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/rosa-claro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-abacate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-amazonas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/verde-escuro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/data-icon/vermelho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/DTFT53_20210203122325_5.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/capa/DTFT53_20210203122325_capa_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/12/capa/xpi53_20210203165121_capa_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/12/xpi53_20210203165121_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/arrudacalcados.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/arrudacalcados.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/semantic-ui.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-bootstrap-4.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-default.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-tailwind.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/tailwind.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/StoreProduct.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Request/StoreProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Request/StoreProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_075229_create_colecaos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_075229_create_colecaos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_26_165355_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_26_165355_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_27_205836_add_campos_table_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_091949_add_campos_table_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/google_map.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/google_map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,19 +191,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\vendor\pagination\fora" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\public" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\variacoes" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\assets\images" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Product" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products\manequins" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
       <recent name="C:\xampp\htdocs\arrudacalcados\database\seeders" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\arrudacalcados\public" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\variacoes" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\assets\images" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Product" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins" />
     </key>
   </component>
   <component name="RunManager">
@@ -521,7 +463,10 @@
       <workItem from="1612402861578" duration="959000" />
       <workItem from="1612429982724" duration="1719000" />
       <workItem from="1612431788839" duration="1973000" />
-      <workItem from="1612433800568" duration="1374000" />
+      <workItem from="1612433800568" duration="1577000" />
+      <workItem from="1612440367718" duration="1594000" />
+      <workItem from="1612445433613" duration="1780000" />
+      <workItem from="1612447262875" duration="1400000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>

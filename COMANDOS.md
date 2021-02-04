@@ -248,7 +248,7 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
  php artisan make:seeder < NomearquivoSeeder > .
  
   php artisan make:seeder ProductSeeder
-  php artisan make:seeder ManequimSeeder
+
  
  Todos os semeadores gerados pela estrutura serão colocados no diretório:make:seeder database/seeds
  
@@ -258,6 +258,17 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
  
  php artisan db:seed --class=ProductSeeder
  
+ 
+ # Validação
+  Request\StoreVariacoes  
+   
+ # Paginação
+ Você pode personalizar as visualizações de paginação exportando-as
+ para o seu diretório usando o comando vendor:publish:resources/views/vendor
+ php artisan vendor:publish --tag=laravel-pagination
+ 
+ 
+ 
  λ php artisan make:controller Product\ProductController --resource
  Controller created successfully.
  
@@ -266,25 +277,10 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
   php artisan make:model Product\Modelo
   
 
-  palmilha
-  
-   'composicao'  //[NOBUQUE, CAMURÇA, VERNIZ, NAPA FLORAL...]
-
-         
-          , 'numeracao_br'   // ex.  33
-          , 'numeracao_eua'  // ex.  8 convertido para americano
-          , 'tamanho'     // tamanho [medio,grande]
-          , 'altura'
-          , 'genero'     // [MASCULINO, FEMININO, UNISSEX]
-          , 'cor'        // [ PRETO,BRANCO,MARFIM]
-          , 'palmilha'   // [CONFORT,TRADICIONAL PRETO BEJE MARFIM]
-          , 'modelo'     // [scarpin, ana bela, sapatilha, plataforma ,...]
-          , 'acessorios' // [extrais, spaike, ilhos, cardaço....]
-          , 'salto'       // [fino, bloco, taça,]
-          , 'solado'    // [ pvc, tr, sofort]
  
- 
- Request\StoreVariacoes
+ALTER TABLE `arruda`.`variacoes` 
+CHANGE COLUMN `peso_liq` `peso_liq` DECIMAL(5,3) NOT NULL ,
+CHANGE COLUMN `peso_bruto` `peso_bruto` DECIMAL(5,3) NOT NULL ;
 
  
 composer dump-autoload --optimize
