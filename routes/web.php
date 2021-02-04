@@ -34,10 +34,12 @@ use App\Http\Controllers\Cart\CartController;
 
 Route::get('/', [CartController::class, 'index'])->name('/');
 Route::get('/welcome', [CartController::class, 'index'])->name('index');
+Route::get('/product_detail/{id}', [CartController::class, 'product_detail'])->name('product_detail');
+
 Route::get('/about_site', [CartController::class, 'sobre'])->name('sobre');
 Route::get('/contact_site', [CartController::class, 'contato'])->name('contato');
 Route::get('/cart_site', [CartController::class, 'cart'])->name('cart');
-Route::get('/product_detail/{id}', [CartController::class, 'product_detail'])->name('product_detail');
+
 Route::get('/checkout_site', [CartController::class, 'checkout'])->name('checkout');
 Route::get('/order_complete', [CartController::class, 'order_complete'])->name('order_complete');
 Route::get('/add_to_wishlist', [CartController::class, 'add_to_wishlist'])->name('add_to_wishlist');

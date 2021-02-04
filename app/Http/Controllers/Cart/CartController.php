@@ -22,7 +22,27 @@ class CartController extends Controller
         $registro = Product::find($id);
         $modelos = Modelo::all();
         $colecaos = Colecao::all();
-          return view('product_detail', compact('registro', 'modelos','colecaos'));
+
+        $variacoes = DB::table('variacoes')
+            ->join('products', 'products.id', '=', 'variacoes.produto_id')
+            ->select('products.*','variacoes.*')
+            ->where('produto_id' ,'=', $id)
+            ->first();
+     //   $imagens = $variacoes->imagem_capa;
+
+       $fotos =  json_decode($variacoes->imagems);
+
+//        $fotos =  strval($fotos);
+//        dd($fotos);
+//
+//        foreach ($fotos as $chave => $valor) {
+//            //disponível variáveis $chave e $valor
+//          echo $chave .'=>'. $valor;
+//          //  echo $valor;
+//        }
+//        dd($fotos);
+
+        return view('product_detail', compact('registro','variacoes', 'modelos','colecaos'));
     }
 
     /**
@@ -32,11 +52,14 @@ class CartController extends Controller
     {
         $modelos = Modelo::all();
         $colecaos = Colecao::all();
-        $registros = DB::table('products')
+        $registros = DB::table('variacoes')
+            ->join('products', 'products.id', '=', 'variacoes.produto_id')
             ->join('modelos', 'products.modelo_id', '=', 'modelos.id')
             ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
-            ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
+            ->select('products.*','variacoes.*','modelos.modelo_description','colecaos.colecao_description')
             ->paginate(16);
+      //  dd(  $registros);
+
         return view('welcome', compact('registros', 'modelos','colecaos'));
 
     }

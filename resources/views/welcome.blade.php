@@ -106,22 +106,20 @@
                     <h2>Mais Vendidos</h2>
                 </div>
             </div>
-            ->inicio row row-pb-md
+{{--            ->inicio row row-pb-md--}}
             <div class="row row-pb-md">
                 <div class="w-100"></div>
-
-
                 @forelse($registros as $registro)
                     <div class="col-lg-3 mb-4 text-center">
                         <div class="product-entry border">
                             <a href="{{route('product_detail', $registro->id)}}" class="prod-img">
                         {{--  DECIDIR LER O DIRETÓRIO E PEGAR UMA IMAGEM OU ALTERAR A TABELA PARA UMA IMAGEM PRINCIPAL  --}}
-                                <img src="{{asset($registro->imagem_capa)}}" class="img-fluid" alt=" x">
+                                <img src="{{asset($registro->imagem_capa)}}" class="img-fluid" alt="Click">
                             </a>
                             <div class="desc">
                                 <h2><a href="{{route('product_detail', $registro->id)}}">{{$registro->descricao}}</a></h2>
-                                <span class="price">R$ XXXXX</span>
-{{--                                {{$registro->preco}}--}}
+                                <span class="price">R$: {{$registro->preco}}</span>
+
                             </div>
                         </div>
                     </div>
@@ -130,7 +128,7 @@
                 @endforelse
 
             </div>
-            ->fim row row-pb-md
+{{--            ->fim row row-pb-md--}}
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p><a href="#" class="btn btn-primary btn-lg">Todos Produtos</a></p>

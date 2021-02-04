@@ -26,18 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/semantic-ui.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-bootstrap-4.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-default.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/simple-tailwind.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/pagination/fora/tailwind.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_03_174247_add_campopeso_table_variacoes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admins/products/manequins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/pagination" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -199,11 +196,11 @@
       <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Product" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\vendor\pagination" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products\manequins" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products" />
       <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
       <recent name="C:\xampp\htdocs\arrudacalcados\database\seeders" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\layouts\_site" />
     </key>
   </component>
   <component name="RunManager">
@@ -466,7 +463,15 @@
       <workItem from="1612433800568" duration="1577000" />
       <workItem from="1612440367718" duration="1594000" />
       <workItem from="1612445433613" duration="1780000" />
-      <workItem from="1612447262875" duration="1400000" />
+      <workItem from="1612447262875" duration="2186000" />
+      <workItem from="1612457911618" duration="1854000" />
+      <workItem from="1612459809928" duration="1714000" />
+      <workItem from="1612461646654" duration="2274000" />
+      <workItem from="1612463958130" duration="1782000" />
+      <workItem from="1612465772022" duration="1783000" />
+      <workItem from="1612468107673" duration="1810000" />
+      <workItem from="1612469978088" duration="1776000" />
+      <workItem from="1612471791159" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -545,7 +550,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611583891495</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="04/02/21- Implementação do cadastro de produtos para testes.">
+      <created>1612448857781</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1612448857781</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +597,8 @@
     <MESSAGE value="24/01/21- inclusão da seeder product." />
     <MESSAGE value="24/01/21- demais auxiliares." />
     <MESSAGE value="25/01/21- Implementação do cadastro de Slides." />
-    <option name="LAST_COMMIT_MESSAGE" value="25/01/21- Implementação do cadastro de Slides." />
+    <MESSAGE value="04/02/21- Implementação do cadastro de produtos para testes." />
+    <option name="LAST_COMMIT_MESSAGE" value="04/02/21- Implementação do cadastro de produtos para testes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="41" key="#Inspections" timestamp="1611747485999">
@@ -616,10 +629,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612296304443" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1611583890106">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1612448856547">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611583890106" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1612448856547" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611337549524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -668,10 +681,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611596206070" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1611583893945">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612448862406">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611583893945" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612448862406" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1611841784864">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

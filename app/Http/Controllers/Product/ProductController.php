@@ -75,6 +75,8 @@ class ProductController extends Controller
         else
         {
             $registro = Product::find($id);
+
+//            04-02 ajustar para  antes da exclusão se tem imagem  ou diretorio de imagem para excluir
             $registro->delete();
 
             \Session::flash('mensagem',['msg'=>'Registro excluído com sucesso!'
