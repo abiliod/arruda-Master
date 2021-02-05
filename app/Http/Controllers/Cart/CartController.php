@@ -23,26 +23,25 @@ class CartController extends Controller
         $modelos = Modelo::all();
         $colecaos = Colecao::all();
 
+        $imagems =  json_decode($registro->imagems);
+
+
         $variacoes = DB::table('variacoes')
             ->join('products', 'products.id', '=', 'variacoes.produto_id')
-            ->select('products.*','variacoes.*')
+            ->select('variacoes.*','products.*')
             ->where('produto_id' ,'=', $id)
             ->first();
-     //   $imagens = $variacoes->imagem_capa;
 
-       $fotos =  json_decode($variacoes->imagems);
+        $sizes = DB::table('variacoes')
+            ->join('products', 'products.id', '=', 'variacoes.produto_id')
+            ->select('variacoes.*','products.*')
+            ->where('produto_id' ,'=', $id)
+            ->where('estoque' ,'>=', 1)
+            ->get();
 
-//        $fotos =  strval($fotos);
-//        dd($fotos);
-//
-//        foreach ($fotos as $chave => $valor) {
-//            //disponível variáveis $chave e $valor
-//          echo $chave .'=>'. $valor;
-//          //  echo $valor;
-//        }
-//        dd($fotos);
+//        dd($variacoes);
 
-        return view('product_detail', compact('registro','variacoes', 'modelos','colecaos'));
+        return view('product_detail', compact('sizes','imagems','registro','variacoes', 'modelos','colecaos'));
     }
 
     /**
