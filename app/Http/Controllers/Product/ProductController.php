@@ -118,6 +118,7 @@ class ProductController extends Controller
         $registro->save();
         $directory = "img/products/".$registro->id.'/';
         $directory_capa = "img/products/".$registro->id.'/capa/';
+
         if($request->hasfile('imagem_capa'))
         {
             request()->validate([
@@ -141,6 +142,7 @@ class ProductController extends Controller
                 $registro->imagem_capa = $dirimagempath.$nomeArquivo;
             }
         }
+
         if($request->hasfile('imagems'))
         {
             $dirimagempath = $directory;

@@ -7,13 +7,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <p class="bread"><span><a href="index.html">Home</a></span> / <span>Product Details</span></p>
+                            <p class="bread"><span><a href="{{ route('/') }}" ">Home</a></span> / <span>Product Details</span></p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="colorlib-product">
                 <div class="container">
                     <div class="row row-pb-lg product-detail-wrap">
@@ -38,7 +36,8 @@
 
                                 <h3>{{$registro->descricao}}</h3>
                                 <p class="price">
-                                    <span>R$ {{$variacoes->preco}}</span>
+                                    <span> Preço Médio {{  'R$ '.number_format($sizes->sum('preco') / $sizes->count('preco'), 2, ',', '.') }}</span>
+
                                     <span class="rate">
 									<i class="icon-star-full"></i>
 									<i class="icon-star-full"></i>
@@ -52,10 +51,26 @@
                                 <div class="size-wrap">
                                     @if($variacoes->sub_category == "Calçados")
                                         <div class="block-26 mb-2">
-                                            <h4>Tamanhos Disponíveis</h4>
+                                            <h4>Cor/Tamanhos Disponíveis</h4>
                                             <ul>
                                                 @foreach ($sizes as $size)
-                                                    <li><a href="#">{{ $size->tamanho_br }}</a></li>
+                                                    <li>
+{{--                                                        neste arquivo  não tem  form para levar metodo post--}}
+{{--                                                        a seleção do objeto de desejo será pelo metodo get?  se for como--}}
+{{--                                                        será enviado a quantidade? visto que no botão add cart está solto--}}
+{{--                                                        ou seja não está dentro de um formulário--}}
+{{--                                                        o id do produto escolhido está no campo--}}
+{{--                                                        $size->id--}}
+                                                        <a href="#">
+                                                            <figure>
+                                                                <p><img class=scaled src="{{asset($size->imagem_product)}}"
+                                                                        alt="">
+                                                                    <figcaption>
+                                                                        R$ {{$size->preco}}, Tamamho: {{ $size->tamanho_br }}
+                                                                    </figcaption>
+                                                            </figure>
+                                                        </a>
+                                                    </li>
                                                 @endforeach
                                             </ul>
                                         </div>
@@ -64,7 +79,15 @@
                                             <h4>Dimensões</h4>
                                             <ul>
                                                 @foreach ($sizes as $size)
-                                                    <li><a href="#"> Tamanho: {{ $size->tamanho_br }} Altura: {{ $size->altura }}</a></li>
+                                                    <li>
+                                                        <a href="#"> Tamamho: {{ $size->tamanho_br }} Altura: {{ $size->altura }} <figure class="li">
+                                                                <p><img src="{{asset('data-icon/'.$size->cor.'.jpg')}}">
+                                                                    <figcaption>
+                                                                        {{ $size->cor }} / {{ $size->tamanho_br }}
+                                                                    </figcaption>
+                                                            </figure>
+                                                        </a>
+                                                    </li>
                                                 @endforeach
                                             </ul>
                                         </div>

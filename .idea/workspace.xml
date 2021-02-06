@@ -26,10 +26,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f05f0042-cdd9-4a23-8830-90d1b614e631.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_190712_add_campo_table_variacoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/arruda.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_1-amarelo-medio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_2-azul-ceu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_3-verde-amazonas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_4-preto.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/2/item/item_2-azul-ceu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/3/item/item_3-verde-amazonas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product/Variacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Variacao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +68,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -178,6 +203,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/pagination" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -470,7 +496,30 @@
       <workItem from="1612479936348" duration="673000" />
       <workItem from="1612489684799" duration="1782000" />
       <workItem from="1612491497618" duration="1842000" />
-      <workItem from="1612493370024" duration="665000" />
+      <workItem from="1612493370024" duration="869000" />
+      <workItem from="1612526752947" duration="1724000" />
+      <workItem from="1612530723124" duration="1966000" />
+      <workItem from="1612532752459" duration="1818000" />
+      <workItem from="1612534638700" duration="1774000" />
+      <workItem from="1612536476779" duration="1355000" />
+      <workItem from="1612544765623" duration="685000" />
+      <workItem from="1612555152538" duration="1777000" />
+      <workItem from="1612556966375" duration="3391000" />
+      <workItem from="1612560463932" duration="1283000" />
+      <workItem from="1612562522912" duration="986000" />
+      <workItem from="1612571187207" duration="1773000" />
+      <workItem from="1612572990953" duration="1783000" />
+      <workItem from="1612574810324" duration="1178000" />
+      <workItem from="1612604555130" duration="1940000" />
+      <workItem from="1612606530363" duration="2281000" />
+      <workItem from="1612608936399" duration="1730000" />
+      <workItem from="1612610747660" duration="1784000" />
+      <workItem from="1612612604073" duration="1775000" />
+      <workItem from="1612614421976" duration="1701000" />
+      <workItem from="1612616440134" duration="1778000" />
+      <workItem from="1612618252789" duration="1779000" />
+      <workItem from="1612640557728" duration="1770000" />
+      <workItem from="1612642379377" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -556,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612448857781</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="04/02/21- Ajuste para Detalhe do produto.">
+      <created>1612494224046</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612494224046</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +653,8 @@
     <MESSAGE value="24/01/21- demais auxiliares." />
     <MESSAGE value="25/01/21- Implementação do cadastro de Slides." />
     <MESSAGE value="04/02/21- Implementação do cadastro de produtos para testes." />
-    <option name="LAST_COMMIT_MESSAGE" value="04/02/21- Implementação do cadastro de produtos para testes." />
+    <MESSAGE value="04/02/21- Ajuste para Detalhe do produto." />
+    <option name="LAST_COMMIT_MESSAGE" value="04/02/21- Ajuste para Detalhe do produto." />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="41" key="#Inspections" timestamp="1611747485999">
@@ -628,10 +685,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612296304443" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1612448856547">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1612494222738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1612448856547" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1612494222738" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1611337549524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -668,10 +725,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612277895449" />
-    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1611583792208">
+    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1612613674596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611583792208" />
+    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612613674596" />
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1611366439407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -680,10 +737,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611596206070" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612448862406">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1612494226819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612448862406" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1612494226819" />
     <state x="479" y="183" width="407" height="359" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1612492832952">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -10,7 +10,7 @@
                         <li><a href="{{route('home')}}">Início</a></li>
                         <li><a href="{{route('admins.products')}}">Lista de Produtos</a></li>
                         <li><a href="{{route('admins.products.edit',$id)}}">Edição de Produto</a></li>
-                        <li><a href="{{ route('admins.variacoes',$id) }}">Lista de Variações</a></li>
+                        <li><a href="{{ route('admins.variacoes',$registro->produto_id)}}">Lista de Variações</a></li>
                         <li class="active"><a href="{{ route('admins.variacoes.edit',$id) }}">Editando de Variação</a></li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
                  </ul>
             </div>
         @endif
-        <form action="{{ route('admins.variacoes.update',$registro->id) }}" method="post">
+        <form action="{{ route('admins.variacoes.update',$registro->id) }}" method="post"  enctype="multipart/form-data">
             {{csrf_field()}}
             <input type="hidden" name="_method" value="put">
             <input type="hidden" id="produto_id" name="produto_id" value="{{$registro->produto_id}}">

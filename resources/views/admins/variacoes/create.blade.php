@@ -26,7 +26,7 @@
                     </ul>
                 </div>
             @endif
-            <form action="{{route('admins.variacoes.store')}}" method="post">
+            <form action="{{route('admins.variacoes.store')}}" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
                 <input type="hidden" name="produto_id" value="{{$id}}">
                 @include('admins.variacoes._form')

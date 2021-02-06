@@ -45,7 +45,7 @@ Route::get('/order_complete', [CartController::class, 'order_complete'])->name('
 Route::get('/add_to_wishlist', [CartController::class, 'add_to_wishlist'])->name('add_to_wishlist');
 Route::get('/women', [CartController::class, 'women'])->name('women');
 Route::get('/men', [CartController::class, 'men'])->name('men');
-Route::get('/search', [CartController::class, 'search'])->name('search');
+Route::post('/search', [CartController::class, 'search'])->name('search');
 
 //Cliente integaringo com paginas do site
 Route::get('site/sobre', [PaginaController::class, 'sobre'])->name('site.sobre');

@@ -16,7 +16,7 @@ class StoreVariacoes extends FormRequest
         }
         else
         {
-            dd('pare qaui StoreVariações linha 19');
+         //   dd('pare qaui StoreVariações linha 19');
             return $this->getRedirectUrl( route('login'));
         }
 

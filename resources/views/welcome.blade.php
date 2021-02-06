@@ -7,14 +7,15 @@
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
-                <li style="background-image: url(images/img_bg_1.jpg);">
+{{--  falta              automatizar o slides--}}
+                <li style="background-image: url(  {{asset('img/products/DTFT1.jpeg') }} );">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6 offset-sm-3 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h1 class="head-1">Homens</h1>
+                                        <h1 class="head-1">Mulheres</h1>
                                         <h2 class="head-2">Calçados</h2>
                                         <h2 class="head-3">Coleções</h2>
                                         <p class="category"><span>Tendências</span></p>
@@ -25,7 +26,8 @@
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(images/img_bg_2.jpg);">
+
+                <li style="background-image: url(  {{asset('img/products/DTFT2.jpeg') }} );">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
@@ -43,17 +45,18 @@
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(images/img_bg_3.jpg);">
+
+                <li style="background-image: url(  {{asset('img/products/DTFT3.jpg') }} );">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-sm-6 offset-sm-3 text-center slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h1 class="head-1">Chegaram</h1>
-                                        <h2 class="head-2">Novos modelos</h2>
-                                        <h2 class="head-3">com até <strong class="font-weight-bold">30%</strong> off</h2>
-                                        <p class="category"><span>Novos Calçados elegantes para homens</span></p>
+                                        <h1 class="head-1">Grandes</h1>
+                                        <h2 class="head-2">Descontos</h2>
+                                        <h2 class="head-3"><strong class="font-weight-bold">50%</strong> Off</h2>
+                                        <p class="category"><span>Sandálias em liquidação.</span></p>
                                         <p><a href="#" class="btn btn-primary">Coleção de Fábrica</a></p>
                                     </div>
                                 </div>
@@ -61,6 +64,7 @@
                         </div>
                     </div>
                 </li>
+
             </ul>
         </div>
     </aside>
@@ -76,14 +80,18 @@
             </div>
         </div>
     </div>
+
+{{--    customizar para mostrar os produtos que vier ser selecionado--}}
     <div class="colorlib-product">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6 text-center">
                     <div class="featured">
-                        <a href="#" class="featured-img" style="background-image: url(images/men.jpg);"></a>
+                        <a href="#" class="featured-img" style="background-image: url( {{asset('img/products/DTFT4.jpg') }} );"></a>
                         <div class="desc">
-                            <h2><a href="#">Coleção masculina</a></h2>
+
+                            {{--    customizar para mostrar os produtos que vier ser selecionado--}}
+                            <h2><a href="#">Plataforma</a></h2>
                         </div>
                     </div>
                 </div>
@@ -91,7 +99,7 @@
                     <div class="featured">
                         <a href="#" class="featured-img" style="background-image: url(images/women.jpg);"></a>
                         <div class="desc">
-                            <h2><a href="#">Coleção feminina</a></h2>
+                            <h2><a href="#">Sandália</a></h2>
                         </div>
                     </div>
                 </div>
@@ -106,20 +114,18 @@
                     <h2>Mais Vendidos</h2>
                 </div>
             </div>
-{{--            ->inicio row row-pb-md--}}
+
             <div class="row row-pb-md">
                 <div class="w-100"></div>
                 @forelse($registros as $registro)
                     <div class="col-lg-3 mb-4 text-center">
                         <div class="product-entry border">
                             <a href="{{route('product_detail', $registro->id)}}" class="prod-img">
-                        {{--  DECIDIR LER O DIRETÓRIO E PEGAR UMA IMAGEM OU ALTERAR A TABELA PARA UMA IMAGEM PRINCIPAL  --}}
                                 <img src="{{asset($registro->imagem_capa)}}" class="img-fluid" alt="Click">
                             </a>
                             <div class="desc">
                                 <h2><a href="{{route('product_detail', $registro->id)}}">{{$registro->descricao}}</a></h2>
-                                <span class="price">R$: {{$registro->preco}}</span>
-
+{{--                                <span class="price">Variações +</span>--}}
                             </div>
                         </div>
                     </div>
@@ -131,7 +137,7 @@
 {{--            ->fim row row-pb-md--}}
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p><a href="#" class="btn btn-primary btn-lg">Todos Produtos</a></p>
+                    <p><a href="{{route('/')}}" class="btn btn-primary btn-lg">Todos Produtos</a></p>
                 </div>
             </div>
         </div>

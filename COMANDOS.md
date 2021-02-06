@@ -25,13 +25,12 @@ https://cmder.en.softonic.com/
 - instale o Mysql 8x.
     https://www.mysql.com/downloads/
 
-    durante o processo de instalação já ative o MySQL Workbench, Gerenciador de Banco de dados nativo do Mysql
-
+    durante o processo de instalação já ative o MySQL Workbench,
+     Gerenciador de Banco de dados nativo do Mysql
 
 ## 2 - Instalando / atualizando o Laravel
 
   -  composer global require laravel/installer
-
 λ php -v
 PHP 7.4.8 (cli) (built: Jul  9 2020 11:30:39) ( ZTS Visual C++ 2017 x64 )
 Copyright (c) The PHP Group
@@ -67,8 +66,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=arruda
 DB_USERNAME=root
-DB_PASSWORD=mila
-
+DB_PASSWORD=seupass
 
 ## 5- Demais configurações
 
@@ -83,8 +81,10 @@ utilize o terminal Cmander ou outro da preferência
     - npm install
 
     obs: Se mesmo assim não funcionar:
-        Invoque o nmp a partir do prompt do DOS, como administrador, pelo Bash ou pelo powershell
-        Com o comando CMD.exe para abrir um prompt inline do DOS, faça seu trabalho com nmp conforme descrito acima e use exit para sair do DOS.
+        Invoque o nmp a partir do prompt do DOS, como administrador, pelo Bash 
+        ou pelo powershell.
+        Com o comando CMD.exe para abrir um prompt inline do DOS, faça seu trabalho
+         com nmp conforme descrito acima e use exit para sair do DOS.
 
          - npm install --global cross-env
         Em seguida execute novamente o comando.
@@ -124,11 +124,13 @@ Teste a a plicação:
 
 o resultado é algo parecido com o a seguir
 
-Warning from https://repo.packagist.org: You are using an outdated version of Composer. Composer 2.0 is now available and you should upgrade. See https://getcomposer.org/2
+Warning from https://repo.packagist.org: You are using an outdated version of Composer. 
+Composer 2.0 is now available and you should upgrade. See https://getcomposer.org/2
 Using version ^3.1 for laravel/ui
 ./composer.json has been updated
 Loading composer repositories with package information
-Warning from https://repo.packagist.org: You are using an outdated version of Composer. Composer 2.0 is now available and you should upgrade. See https://getcomposer.org/2
+Warning from https://repo.packagist.org: You are using an outdated version of Composer. 
+Composer 2.0 is now available and you should upgrade. See https://getcomposer.org/2
 Updating dependencies (including require-dev)
 Package operations: 1 install, 0 updates, 0 removals
   - Installing laravel/ui (v3.1.0): Downloading (100%)
@@ -162,6 +164,8 @@ Authentication scaffolding generated successfully.
  C:\xampp\htdocs\arrudacalcados (main -> origin)
  λ php artisan make:model Admin\Slide
  Model created successfully.
+ 
+ 
  
  C:\xampp\htdocs\arrudacalcados (main -> origin)
  λ php artisan make:controller Admin\PaginasController
@@ -241,6 +245,9 @@ Migrated:  2021_01_24_145355_create_products_table (258.01ms)
 
  php artisan make:migration add_campos_table_products --table=products
  php artisan make:migration rename_table_manequims --table=manequims
+ 
+  php artisan make:migration add_campo_table_variacoes --table=variacoes
+ imagem_capa
 
  
  # Gerando Semeadores.

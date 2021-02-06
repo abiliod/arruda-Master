@@ -13,34 +13,49 @@ use Illuminate\Support\Facades\DB;
 class CartController extends Controller
 {
 
+
+    public function search(Request $request)
+    {
+
+
+
+
+        $modelos = Modelo::all();
+        $colecaos = Colecao::all();
+        $registros = DB::table('products')
+            ->join('modelos', 'products.modelo_id', '=', 'modelos.id')
+            ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
+            ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
+            ->where('referencia', '=',$request->all()['search'])
+            ->OrWhere('sub_category', '=',$request->all()['search'])
+            ->OrWhere([['descricao', 'LIKE', '%' . $request->all()['search'] .'%' ]])
+            ->OrWhere([['composicao', 'LIKE', '%' . $request->all()['search'] .'%' ]])
+            ->orderBy('products.id')
+            ->paginate(16);
+        return view('welcome', compact('registros', 'modelos','colecaos'));
+    }
     /**
      * @param $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function product_detail($id)
     {
+        $imagems = null;
         $registro = Product::find($id);
         $modelos = Modelo::all();
         $colecaos = Colecao::all();
-
-        $imagems =  json_decode($registro->imagems);
-
-
+        if (isset($registro->imagems))    $imagems =  json_decode($registro->imagems);
         $variacoes = DB::table('variacoes')
             ->join('products', 'products.id', '=', 'variacoes.produto_id')
             ->select('variacoes.*','products.*')
             ->where('produto_id' ,'=', $id)
             ->first();
-
         $sizes = DB::table('variacoes')
             ->join('products', 'products.id', '=', 'variacoes.produto_id')
             ->select('variacoes.*','products.*')
             ->where('produto_id' ,'=', $id)
             ->where('estoque' ,'>=', 1)
             ->get();
-
-//        dd($variacoes);
-
         return view('product_detail', compact('sizes','imagems','registro','variacoes', 'modelos','colecaos'));
     }
 
@@ -51,14 +66,12 @@ class CartController extends Controller
     {
         $modelos = Modelo::all();
         $colecaos = Colecao::all();
-        $registros = DB::table('variacoes')
-            ->join('products', 'products.id', '=', 'variacoes.produto_id')
+        $registros = DB::table('products')
             ->join('modelos', 'products.modelo_id', '=', 'modelos.id')
             ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
-            ->select('products.*','variacoes.*','modelos.modelo_description','colecaos.colecao_description')
+            ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
+            ->orderBy('products.id')
             ->paginate(16);
-      //  dd(  $registros);
-
         return view('welcome', compact('registros', 'modelos','colecaos'));
 
     }
@@ -95,11 +108,6 @@ class CartController extends Controller
      //   return view('about_site');
     }
 
-    public function search()
-    {
-        //buscar um produto pela descrição e mostrar a listagem
-        return view('welcome');
-    }
     public function women()
     {
         // filtrar por genero  feminino

@@ -18,7 +18,8 @@ class Variacao extends Model
         , 'desconto'
         , 'peso_bruto'
         , 'peso_liq'
-
+        , 'imagem_product'
+        , 'directory_product'
 
     ];
     public function products()

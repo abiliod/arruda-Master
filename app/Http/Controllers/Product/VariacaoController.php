@@ -13,6 +13,7 @@ class VariacaoController extends Controller
 {
     public function update(StoreVariacoes $request,  $id)
     {
+
         $dados = $request->all();
         $res = DB::table('variacoes')
             ->where('produto_id' ,'=', $dados['produto_id'])
@@ -32,6 +33,25 @@ class VariacaoController extends Controller
             $registro->estoque =  $dados['estoque'];
             $registro->preco =  $dados['preco'];
             $registro->desconto =  $dados['desconto'];
+            $directory_product = "img/products/".$registro->produto_id.'/item/';
+
+            if($request->hasfile('imagem_product'))
+            {
+                request()->validate([
+                    'imagem_product' => 'required',
+                    'imagem_product.*' => 'image|mimes:jpeg,png,jpg,svg|max:2048'
+                ]);
+                $file = $request->file('imagem_product');
+                if($file)
+                {
+                    $dirimagempath = $directory_product;
+                    $ext = $file->guessClientExtension();
+                    $nomeArquivo = strtolower ('item_'.$registro->id.'-'.$registro->cor.'.'.$ext);
+                    $file->move($dirimagempath,$nomeArquivo);
+                    $registro->imagem_product = $dirimagempath.$nomeArquivo;
+                    $registro->directory_product =$dirimagempath;
+                }
+            }
             $registro->update();
             $id = $registro->produto_id;
             $variacoes = DB::table('variacoes')
@@ -40,10 +60,8 @@ class VariacaoController extends Controller
                 ->where('produto_id' ,'=', $dados['produto_id'])
                 ->paginate(10);
             $registro = Product::find($id);
-
             \Session::flash('mensagem',['msg'=>'Registro atualizado.'
                 ,'class'=>'green white-text']);
-
             return view('admins.variacoes.index', compact('variacoes','registro','id'));
         }
         else
@@ -81,6 +99,26 @@ class VariacaoController extends Controller
             $registro->preco =  $dados['preco'];
             $registro->desconto =  $dados['desconto'];
             $registro->save();
+            $directory_product = "img/products/".$registro->produto_id.'/item/';
+            if($request->hasfile('imagem_product'))
+            {
+                request()->validate([
+                    'imagem_product' => 'required',
+                    'imagem_product.*' => 'image|mimes:jpeg,png,jpg,svg|max:2048'
+                ]);
+                $file = $request->file('imagem_product');
+                if($file)
+                {
+                    $dirimagempath = $directory_product;
+                    $ext = $file->guessClientExtension();
+                    $nomeArquivo = strtolower ('item_'.$registro->id.'-'.$registro->cor.'.'.$ext);
+                    $file->move($dirimagempath,$nomeArquivo);
+                    $registro->imagem_product = $dirimagempath.$nomeArquivo;
+                    $registro->directory_product = $dirimagempath;
+                }
+            }
+
+            $registro->update();
             $id = $registro->produto_id;
             $variacoes = DB::table('variacoes')
                 ->join('products', 'products.id', '=', 'variacoes.produto_id')

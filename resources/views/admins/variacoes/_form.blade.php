@@ -1,3 +1,23 @@
+
+<div class="row">
+    <div class="file-field input-field col m6 s12">
+        <div class="btn">
+            <span>Imagem do Item</span>
+            <input type="file" name="imagem_product" id="imagem_product" >
+        </div>
+        <div class="file-path-wrapper">
+            <input type="text" class="file-path validade">
+        </div>
+    </div>
+    <div class="col m6 s12">
+        @if(isset($registro->imagem_product))
+            <img width="120" src="{{ asset( $registro->imagem_product ) }}">
+        @endif
+    </div>
+</div>
+
+
+
 <div class="row col-12">
     <div class="input-field col-sm-3">
         <select name="cor" id="cor" class="icons">
@@ -39,7 +59,7 @@
                 <option value="preto" data-icon="{{asset('data-icon/preto.jpg')}}" class="left circle"
                     {{(isset($registro->cor) && $registro->cor == 'preto'  ? 'selected' : '')}}>Preto</option>
 
-                <option value="rosa-claro" data-icon="{{asset('data-icon/rosa-claro.jpg')}} " class="left circle"
+                <option value="rosa-claro" data-icon="{{asset('data-icon/rosa-claro.jpg')}}" class="left circle"
                     {{(isset($registro->cor) && $registro->cor == 'rosa-claro'  ? 'selected' : '')}}>Rosa Claro</option>
                 <option value="verde-abacate" data-icon="{{asset('data-icon/verde-abacate.jpg')}} " class="left circle"
                     {{(isset($registro->cor) && $registro->cor == 'verde-abacate'  ? 'selected' : '')}}>Verde-Abacate</option>
@@ -62,6 +82,8 @@
             @if ($errors->has('preco')) {{ $errors->first('preco') }}
             @else Preço: @endif</label>
     </div>
+
+
 
     <div class="input-field col-sm-2">
         <input type="text" name="tamanho_br" id="tamanho_br" placeholder="Ex: 33 ou P M G XG" class="validate"

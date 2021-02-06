@@ -1,0 +1,19 @@
+figure {
+    display: table;
+    float: right;
+    max-width: 45px;
+    text-align: center;
+    text-indent: 0;
+    border: thin silver solid;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+img.scaled {
+    width: 100%;
+}
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    font-style: italic;
+    font-size: 9px;
+}
