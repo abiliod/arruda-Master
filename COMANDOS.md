@@ -226,8 +226,10 @@ Authentication scaffolding generated successfully.
  
  php artisan make:migration alter_campos_table_products --table=products
  php artisan make:migration add_campoeindex_table_products --table=products
+ php artisan make:migration add_visualiza_table_products --table=products
  
  php artisan make:migration add_campopeso_table_variacoes --table=variacoes
+ php artisan make:migration add_campostatus_table_variacoes --table=variacoes
  
  
  php artisan make:model Product\Product -m

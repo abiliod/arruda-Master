@@ -20,6 +20,7 @@ class Variacao extends Model
         , 'peso_liq'
         , 'imagem_product'
         , 'directory_product'
+        , 'status'
 
     ];
     public function products()

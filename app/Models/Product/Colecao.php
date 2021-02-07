@@ -11,7 +11,8 @@ class Colecao extends Model
         'colecao_description'
     ];
 
-    public function product() {
-        return $this->belongsToMany(Product::class);
+    public function products() {
+        return $this->hasMany(Product::class,'product_id');
+
     }
 }

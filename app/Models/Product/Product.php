@@ -24,13 +24,12 @@ class Product extends Model
         , 'solado'
         , 'imagem_capa'
         , 'imagems'
-        ,'directory'
-        ,'directory_capa'
-        ,'descricaolonga'
-        ,'detalhe'
-
-
-
+        , 'directory'
+        , 'directory_capa'
+        , 'descricaolonga'
+        , 'detalhe'
+        , 'visualizacoes'
+        , 'publicar'
 
     ];
     //no pedido haverá um desconto de x por cento

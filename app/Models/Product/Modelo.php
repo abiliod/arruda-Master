@@ -10,8 +10,7 @@ class Modelo extends Model
     protected $fillable = [
         'modelo_description'
     ];
-
-    public function product() {
-        return $this->belongsToMany(Product::class);
+    public function products() {
+        return $this->hasMany(Product::class,'modelo_id');
     }
 }

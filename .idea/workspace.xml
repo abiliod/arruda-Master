@@ -26,34 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_05_190712_add_campo_table_variacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/arruda.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_1-amarelo-medio.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_2-azul-ceu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_3-verde-amazonas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1/item/item_4-preto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/2/item/item_2-azul-ceu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/3/item/item_3-verde-amazonas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/DTFT4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_065259_add_visualiza_table_products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_070342_add_campostatus_table_variacoes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Request/StoreVariacoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product/Colecao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Colecao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product/Modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Modelo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product/Variacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Variacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/_nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_site/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -520,6 +502,12 @@
       <workItem from="1612618252789" duration="1779000" />
       <workItem from="1612640557728" duration="1770000" />
       <workItem from="1612642379377" duration="1074000" />
+      <workItem from="1612649991315" duration="913000" />
+      <workItem from="1612659007213" duration="658000" />
+      <workItem from="1612690806798" duration="1764000" />
+      <workItem from="1612692612852" duration="1034000" />
+      <workItem from="1612737625351" duration="1783000" />
+      <workItem from="1612739449153" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -725,10 +713,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612277895449" />
-    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1612613674596">
+    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1612691197335">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612613674596" />
+    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612691197335" />
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1611366439407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -753,16 +741,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1612199302238" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/admins/products/_form.blade.php</url>
-          <line>263</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

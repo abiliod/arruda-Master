@@ -113,7 +113,7 @@
 </div>
 <div class="row col-12">
 
-    <div class="input-field col-sm-3">
+    <div class="input-field col-sm-2">
     <input type="number" name="estoque" id="estoque" placeholder="Ex: 0" class="validate"
            value="{{ isset($registro->estoque) ? $registro->estoque : old('estoque') }}">
     <label for="estoque" Class="@if ($errors->has('estoque')) text-danger @endif">
@@ -131,7 +131,7 @@
 
 
 
-    <div class="input-field col-sm-3">
+    <div class="input-field col-sm-2">
         <select name="altura" id="altura">
             @if (! old('altura'))
                 <option value="" {{(isset($registro->altura) && $registro->altura == ''  ? 'selected' : '')}}>Selecione</option>
@@ -146,6 +146,20 @@
         </select>
         <label for="altura">Opções de Altura:</label>
     </div>
+
+    <div class="input-field col-sm-2">
+        <select name="status" id="status">
+            @if (! old('status'))
+                <option value="" {{(isset($registro->status) && $registro->status == ''  ? 'selected' : '')}}>Selecione</option>
+            @else
+                <option value="{{old('status')}}" selected="selected" >{{ old('status') }}</option>
+            @endif
+                <option value="aluga" {{(isset($registro->status) && $registro->status == 'aluga'  ? 'selected' : '')}}>Aluga</option>
+                <option value="vende" {{(isset($registro->status) && $registro->status == 'vende'  ? 'selected' : '')}}>Vende</option>
+        </select>
+        <label for="status">Status:</label>
+    </div>
+
     <div class="input-field col-sm-4">
         <input type="text"  name="tamanho_eua"  id="tamanho_eua" placeholder="Ex: 7 ou P M G XG" class="validate"
                value="{{ isset($registro->tamanho_eua) ? $registro->tamanho_eua :  old('tamanho_eua') }}">

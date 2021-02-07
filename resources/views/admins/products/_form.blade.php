@@ -273,17 +273,33 @@
 </div>
 
 <div class="row col-12">
-    <div class="input-field col-sm-3">
-        <input type="text" style="text-transform: uppercase;" id="acessorios" name="acessorios" class="validate" value="{{ isset($registro->acessorios) ? $registro->acessorios : old('acessorios') }}">
+    <div class="input-field col-sm-2">
+        <input type="text" style="text-transform: uppercase;" id="acessorios" name="acessorios" class="validate"
+               value="{{ isset($registro->acessorios) ? $registro->acessorios : old('acessorios') }}">
         <label for="acessorios">Opções de Acessórios</label>
     </div>
-    <div class="input-field col-sm-9" id="detalhe">
+
+    <div class="input-field col-sm-2">
+        <select name="publicar" id="publicar">
+            @if (! old('publicar'))
+                <option value="" {{(isset($registro->publicar) && $registro->publicar == ''  ? 'selected' : '')}}>Selecione</option>
+            @else
+                <option value="{{old('publicar')}}" selected="selected" >{{ old('publicar') }}</option>
+            @endif
+            <option value="nao" {{(isset($registro->publicar) && $registro->publicar == 'nao'  ? 'selected' : '')}}>Não</option>
+            <option value="sim" {{(isset($registro->publicar) && $registro->publicar == 'sim'  ? 'selected' : '')}}>Sim</option>
+        </select>
+        <label for="publicar">Publicar ?</label>
+    </div>
+
+
+    <div class="input-field col-sm-8" id="detalhe">
         <i class="material-icons prefix">mode_edit</i>
         <textarea   style="text-transform: capitalize;"  id="detalhe" name="detalhe" class="materialize-textarea">
             {{ isset($registro->detalhe) ? $registro->detalhe : '' }}
         </textarea>
         <label for="detalhe" class="@if ($errors->has('detalhe')) text-danger @endif">
             @if ($errors->has('detalhe')) {{ $errors->first('detalhe') }}
-            @else Detalhes_De_Fabricação: @endif</label>
+            @else Detalhes De Fabricação: @endif</label>
     </div>
 </div>
