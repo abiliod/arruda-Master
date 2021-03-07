@@ -1,21 +1,23 @@
-@extends('layouts._gynPromo.app')
+@extends('layouts._admin.app')
 @section('content')
 	<div class="container">
 		<h2 class="center">Lista de Papéis para {{$usuario->name}}</h2>
-		<div class="row">
-		 	<nav>
-			    <div class="nav-wrapper green">
-			      	<div class="col s12">
-				        <a href="{{ route('home')}}" class="breadcrumb">Início</a>
-				        <a href="{{ route('admins.usuarios')}}" class="breadcrumb">Lista de Usuários</a>
-				        <a class="breadcrumb">Lista de Papéis</a>
-			      	</div>
-			    </div>
-		  	</nav>
-		</div>
+
+        <div class="row #4db6ac teal lighten-2 ">
+            <nav >
+                <div class="nav-wrapper #4db6ac teal lighten-2">
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="{{route('home')}}">Início</a></li>
+                        <li><a href="{{ route('admin.usuarios')}}" >Lista de Usuários</a></li>
+                        <li><a>Lista de Papéis</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
 
 		<div class="row">
-			<form action="{{route('admins.usuarios.papel.salvar',$usuario->id)}}" method="post">
+			<form action="{{route('admin.usuarios.papel.salvar',$usuario->id)}}" method="post">
 			@CSRF
 			<div class="input-field">
 				<select name="papel_id">
@@ -42,7 +44,7 @@
 						<td>{{ $papel->nome }}</td>
 						<td>{{ $papel->descricao }}</td>
 						<td>
-							<a class="btn red" href="javascript: if(confirm('Remover esse papel?')){ window.location.href = '{{ route('admins.usuarios.papel.remover',[$usuario->id,$papel->id]) }}' }">Remover</a>
+							<a class="btn red" href="javascript: if(confirm('Remover esse papel?')){ window.location.href = '{{ route('admin.usuarios.papel.remover',[$usuario->id,$papel->id]) }}' }">Remover</a>
 						</td>
 					</tr>
 				@endforeach

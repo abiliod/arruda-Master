@@ -26,16 +26,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8aa7e296-eccf-4fe8-b599-aff20e4b9780" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_065259_add_visualiza_table_products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_07_070342_add_campostatus_table_variacoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Cidades/Endereco.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Pessoas/Pessoa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_19_120609_create__permissaos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_19_120610_create_papels_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_19_120700_create_pessoas_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_155802_create__papel_permissao__table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_23_200737_create_enderecos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_09_005324_create_papel_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PapelPermissaoTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PapelTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/Papel_userTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PermissaoTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/PessoasTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/SlidesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UsuariosTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COMANDOS.md" beforeDir="false" afterPath="$PROJECT_DIR$/COMANDOS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product/Colecao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Colecao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product/Modelo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Modelo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product/Variacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product/Variacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/variacoes/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PapelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PapelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Pessoa/PessoaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Pessoa/PessoaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/papel/adicionar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/papel/adicionar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/papel/editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/papel/editar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/papel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/papel/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/papel/permissao.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/papel/permissao.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/_formCreateEndereco.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/_formCreateEndereco.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/_formStep4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/_formStep4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/adicionarPessoa.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/adicionarPessoa.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/editarEndereco.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/editarEndereco.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCEP.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCEP.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCPF_CNPJ.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/entradaCPF_CNPJ.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/pessoas/manter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/pessoas/manter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/usuarios/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/usuarios/adicionar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/adicionar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/usuarios/editar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/editar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/usuarios/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/usuarios/papel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/usuarios/papel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/_nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/_nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +216,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/pagination" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -199,11 +231,11 @@
       <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Product" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\vendor\pagination" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products\manequins" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins\products" />
-      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\database\migrations" />
       <recent name="C:\xampp\htdocs\arrudacalcados\database\seeders" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\resources\views\admins" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Http\Controllers\Admin" />
+      <recent name="C:\xampp\htdocs\arrudacalcados\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -508,6 +540,12 @@
       <workItem from="1612692612852" duration="1034000" />
       <workItem from="1612737625351" duration="1783000" />
       <workItem from="1612739449153" duration="696000" />
+      <workItem from="1615031554955" duration="1018000" />
+      <workItem from="1615109246551" duration="1629000" />
+      <workItem from="1615110978590" duration="1714000" />
+      <workItem from="1615112914572" duration="1582000" />
+      <workItem from="1615114771856" duration="1087000" />
+      <workItem from="1615115907182" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="19/01/21- Ajuste de responsividade e chamada de paginas no padrão template blade.">
       <created>1611091901223</created>
@@ -669,10 +707,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="356" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1612220242748" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612296304443">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615110909060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612296304443" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615110909060" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1612494222738">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -713,10 +751,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="286" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612277895449" />
-    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1612691197335">
+    <state x="503" y="65" key="RollbackChangesDialog" timestamp="1614986457419">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612691197335" />
+    <state x="503" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614986457419" />
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1611366439407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

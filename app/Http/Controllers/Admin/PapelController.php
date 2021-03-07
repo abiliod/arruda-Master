@@ -3,15 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Papel;
+use App\Models\Admin\Permissao;
 use Illuminate\Http\Request;
 
 class PapelController extends Controller
 {
     public function index(){
-        if(!auth()->user()->can('papel_listar')){
+        if(! auth()->user()->can('papel_listar')){
             return redirect()->route('home');
         }
-
         $registros = Papel::all();
         return view('admins.papel.index',compact('registros'));
     }

@@ -1,4 +1,4 @@
-@extends('layouts._gynPromo.app')
+@extends('layouts._admin.app')
 @section('content')
 <div class="container">
 	<h3 class="center">Cadastro de Pessoa</h3>

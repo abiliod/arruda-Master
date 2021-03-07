@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Pessoa;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Papel_user;
+use App\Models\Cidades\Endereco;
+use App\Models\Pessoas\Pessoa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PessoaController extends Controller
 {

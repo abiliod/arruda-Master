@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin\Papel;
+use App\Models\User;
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class UsuarioController extends Controller
 {
@@ -12,10 +15,11 @@ class UsuarioController extends Controller
     /**
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function sair()
+    public function logout()
     {
         Auth::logout();
-        return redirect()->route('login');
+        return redirect()->route('/');
+
     }
 
     public function adicionar()
@@ -121,15 +125,22 @@ class UsuarioController extends Controller
 
     public function salvarPapel(Request $request,$id)
     {
-        if(!auth()->user()->can('usuario_editar'))
+        if(! auth()->user()->can('usuario_editar'))
         {
             return redirect()->route('home');
         }
 
+
         $usuario = User::find($id);
         $dados = $request->all();
         $papel = Papel::find($dados['papel_id']);
-        $usuario->adicionaPapel($papel);
+//        dd('papel '.$papel, 'usuario '.$usuario  );
+        try {
+            $usuario->adicionaPapel($papel);
+        }catch (\Exception $e){
+            \Session::flash('mensagem',['msg'=>'Papel já existe para o usuário.'
+                ,'class'=>'red white-text']);
+        }
         return redirect()->back();
     }
 
@@ -171,6 +182,7 @@ class UsuarioController extends Controller
 
     public function index()
     {
+
         if(auth()->user()->can('usuario_listar'))
         {
             $papel_user = DB::table('papel_user')

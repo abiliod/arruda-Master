@@ -1,11 +1,26 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#">CADASTROS</a></li>
+    <li><a href="#" disabled>CADASTROS</a></li>
+
+
+    <li><a href="{{route('admins.products')}}">Produtos</a></li>
+    {{---  @can('pessoa_listar') @endcan  14/04/2020 inclusao da funcionalidade Pessoas ---}}
+    <li><a href="{{route('admin.pessoas')}}">Pessoas</a></li>
+    {{--    @can('papel_listar')      @endcan--}}
+    <li><a href="{{ route('admin.papel') }}">Papel</a></li>
+    {{--    @can('usuario_listar')       @endcan  --}}
+    <li><a href="{{ route('admin.usuarios') }}">Usuários</a></li>
     {{---   @can('pagina_listar')     @endcan  --}}
     <li><a href="{{ route('admins.paginas') }}">Páginas</a></li>
-    {{---     @can('slide_listar')     @endcan inicio 26/02/2020 inclusao da funcionalidade Slide ---}}
+
+
+
+
     <li><a href="{{route('admins.slides')}}">Slides</a></li>
-    <li><a href="{{route('admins.products')}}">Produtos</a></li>
+    <li><a href="{{ route('site.sobre') }}">Sobre</a></li>
+    <li><a href="{{ route('site.contato') }}">Contato</a>
+    <li><a href="{{ route('sair') }}">Sair</a></li>
+
 </ul>
 <nav>
 	<div class="nav-wrapper #4db6ac teal lighten-2">
@@ -38,11 +53,20 @@
                 <li><a href="{{ route('site.contato') }}">Contato</a>
                 @else
                     <li><a href="#">CADASTROS</a></li>
+
+                    <li><a href="{{route('admins.products')}}">Produtos</a></li>
+                    {{---     @can('slide_listar')     @endcan inicio 26/02/2020 inclusao da funcionalidade Slide ---}}
+                    {{---  @can('pessoa_listar') @endcan  14/04/2020 inclusao da funcionalidade Pessoas ---}}
+                    <li><a href="{{route('admin.pessoas')}}">Pessoas</a></li>
+                    {{--    @can('papel_listar')      @endcan--}}
+                    <li><a href="{{ route('admin.papel') }}">Papel</a></li>
+                    {{--    @can('usuario_listar')       @endcan  --}}
+                    <li><a href="{{ route('admin.usuarios') }}">Usuários</a></li>
+                    {{---   @can('pagina_listar')     @endcan  --}}
                     {{---   @can('pagina_listar')     @endcan  --}}
                     <li><a href="{{ route('admins.paginas') }}">Páginas</a></li>
-                    {{---     @can('slide_listar')     @endcan inicio 26/02/2020 inclusao da funcionalidade Slide ---}}
+
                     <li><a href="{{route('admins.slides')}}">Slides</a></li>
-                    <li><a href="{{route('admins.products')}}">Produtos</a></li>
                     <li><a href="{{ route('site.sobre') }}">Sobre</a></li>
                     <li><a href="{{ route('site.contato') }}">Contato</a>
                     <li><a href="{{ route('sair') }}">Sair</a></li>

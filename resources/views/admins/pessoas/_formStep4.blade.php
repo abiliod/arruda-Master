@@ -44,7 +44,7 @@
 </div>
 
 <div class="row col s12">
-	<div class="input-field col s6">
+	<div class="input-field col s4">
 		<input type="text" name="identidade_inscricaoEstadual" style="text-transform: uppercase" class="validate"  value="{{ isset($registro->identidade_inscricaoEstadual) ? $registro->identidade_inscricaoEstadual : '' }}">
 		@if ($registro->tipoPessoa=='Juridica')
 		<label>Inscrição Estadual</label>
@@ -55,12 +55,11 @@
 		@endif
 	</div>
 
-	<div class="input-field col s6">
+	<div class="input-field col s4">
 		<input type="text" class="date" id="campoData" name="data_nasc_Fundacao"
                value="{{ isset($registro->data_nasc_Fundacao)
                ?  date( 'd/m/Y' , strtotime($registro->data_nasc_Fundacao)) : '' }} "
                onkeypress="$(this).mask('00/00/0000')">
-
 
         @if ($registro->tipoPessoa=='Juridica')
 		<label class="active">Data Fundação</label>
@@ -70,6 +69,26 @@
 		<label class="active">Data de Nascimento ou Fundação</label>
 		@endif
 	</div>
+
+    @if ($registro->tipoPessoa=='Fisica')
+        <div class="input-field col-sm-4">
+            <select name="sexo" id="sexo">
+                @if (! old('genero'))
+                    <option value="" {{(isset($registro->sexo) && $registro->sexo == ''  ? 'selected' : '')}}>Selecione</option>
+                @else
+                    <option value="{{old('genero')}}" selected="selected" >{{ old('genero') }}</option>
+                @endif
+
+                <option value="Feminino" {{(isset($registro->sexo) && $registro->sexo == 'Feminino'  ? 'selected' : '')}}>Feminino</option>
+                <option value="Masculino" {{(isset($registro->sexo) && $registro->sexo == 'Masculino'  ? 'selected' : '')}}>Masculino</option>
+                <option value="Unissex" {{(isset($registro->sexo) && $registro->sexo == 'PrefiroNãoResponder'  ? 'selected' : '')}}>Prefiro Não Responder</option>
+            </select>
+            <label for="genero"  class="@if ($errors->has('sexo')) text-danger @endif">
+                @if ($errors->has('sexo')) {{ $errors->first('sexo') }}
+                @else Gênero @endif</label>
+        </div>
+    @endif
+
 </div>
 
 <div class="row col s12">
@@ -116,8 +135,8 @@
 				<td>{{ $endereco->cep }} {{ $endereco->cidade}} {{ $endereco->estado }}</td>
 				<td>{{ $endereco->logradouro }}, {{ $endereco->numero}}, {{$endereco->complemento }}</td>
 				<td>
-					<a class="btn-flat orange"  href="{{ route('admins.pessoas.editarEndereco',$endereco->id) }}">Editar</a>
-					<a class="btn-flat red" href="javascript: if(confirm('Deletar esse registro?')){ window.location.href = '{{ route('admins.pessoas.deletarEndereco',$endereco->id) }}' }">Deletar</a>
+					<a class="btn-flat orange"  href="{{ route('admin.pessoas.editarEndereco',$endereco->id) }}">Editar</a>
+					<a class="btn-flat red" href="javascript: if(confirm('Deletar esse registro?')){ window.location.href = '{{ route('admin.pessoas.deletarEndereco',$endereco->id) }}' }">Deletar</a>
 				</td>
 			</tr>
             @endforeach
@@ -129,11 +148,15 @@
 		</tbody>
 	</table>
 </div>
-<div class="row">
+
 @if($enderecos->count() == 3)
-	<a class='"btn-flat blue' disabled href="{{ route('admins.pessoas.entradaCEP',$registro->id) }}">Adicionar Endereço</a>
+    <div class="row">
+       <a class="btn-flat blue"  href="{{ route('admin.pessoas.entradaCEP',$registro->id) }}" disabled>Adicionar Endereço</a>
+    </div>
 @endif
 @if($enderecos->count() <> 3)
-<a class='btn-flat blue' href="{{ route('admins.pessoas.entradaCEP',$registro->id) }}">Adicionar Endereço</a>
+    <div class="row">
+        <a class="btn-flat blue"  href="{{ route('admin.pessoas.entradaCEP',$registro->id) }}">Adicionar Endereço</a>
+    </div>
 @endif
-</div>
+

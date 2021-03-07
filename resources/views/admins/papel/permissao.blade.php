@@ -1,23 +1,25 @@
-@extends('layouts._gynPromo.app')
+@extends('layouts._admin.app')
 
 @section('content')
 	<div class="container">
 		<h2 class="center">Lista de Permissões para {{$papel->nome}}</h2>
 
-		<div class="row">
-		 	<nav>
-		    <div class="nav-wrapper green">
-		      	<div class="col s12">
-			        <a href="{{ route('home')}}" class="breadcrumb">Início</a>
-			        <a href="{{route('admins.papel')}}" class="breadcrumb">Lista de Papéis</a>
-			        <a class="breadcrumb">Lista de Permissões</a>
-		      	</div>
-		    </div>
-	  	</nav>
-		</div>
+        <div class="row #4db6ac teal lighten-2 ">
+            <nav >
+                <div class="nav-wrapper #4db6ac teal lighten-2">
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="{{route('home')}}">Início</a></li>
+                        <li><a href="{{route('admin.papel')}}">Lista de Papéis</a></li>
+                        <li class="active"><a href="#">Editar de Permissões</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+                
 
 		<div class="row">
-			<form action="{{route('admins.papel.permissao.salvar',$papel->id)}}" method="post">
+			<form action="{{route('admin.papel.permissao.salvar',$papel->id)}}" method="post">
 			{{ csrf_field() }}
 			<div class="input-field">
 				<select name="permissao_id">
@@ -50,7 +52,7 @@
 
 						<td>
 
-							<a class="btn red" href="javascript: if(confirm('Remover essa permissão?')){ window.location.href = '{{ route('admins.papel.permissao.remover',[$papel->id,$value->id]) }}' }">Remover</a>
+							<a class="btn red" href="javascript: if(confirm('Remover essa permissão?')){ window.location.href = '{{ route('admin.papel.permissao.remover',[$papel->id,$value->id]) }}' }">Remover</a>
 						</td>
 					</tr>
 				@endforeach

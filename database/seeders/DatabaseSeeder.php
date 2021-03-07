@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -18,13 +19,19 @@ class DatabaseSeeder extends Seeder
         // inclusao de Paginas Administrativas Sobre e Contato
 
         $this->call([
-          //  PaginasTableSeeder::class,
-            ProductSeeder::class,
+//            PaginasTableSeeder::class,
+//            ProductSeeder::class,
+//            Imagens iniciais para Pagina Slider Administrativas
+//            SlidesTableSeeder::class,
+//
+            PessoasTableSeeder::class,
+            PermissaoTableSeeder::class,
+            UsuariosTableSeeder::class,
+            PapelTableSeeder::class,
+            PapelPermissaoTableSeeder::class,
+            Papel_userTableSeeder::class,
 
         ]);
 
-
-        //Imagens iniciais para Pagina Slider Administrativas
-    //    $this->call(SlidesTableSeeder::class);
     }
 }

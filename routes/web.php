@@ -1,6 +1,8 @@
 <?php
 
 
+use App\Http\Controllers\Admin\PapelController;
+use App\Http\Controllers\Pessoa\PessoaController;
 use App\Http\Controllers\Product\VariacaoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -93,6 +95,65 @@ Route::get('/admins/variacoes/{id}', [VariacaoController::class, 'index'])->name
 
 
 
+// Administrando Pessoas
+Route::get('/admins/pessoas', [PessoaController::class, 'index'])->name('admin.pessoas');
+
+Route::get('/admins/pessoas/entradaCPF_CNPJ/{id}', [PessoaController::class, 'showEntradaCPF_CNPJ'])->name('admin.pessoas.entradaCPF_CNPJ');
+Route::post('/admins/pessoas/show', [PessoaController::class, 'show'])->name('admin.pessoas.show');
+Route::delete('/admins/pessoas/deletar/{id}', [PessoaController::class, 'destroy'])->name('admin.pessoas.deletar');
+Route::put('/admins/pessoas/atualizaPessoa', [PessoaController::class, 'atualizaPessoa'])->name('admin.pessoas.atualizaPessoa');
+Route::get('/admins/pessoas/editarEndereco/{id}', [PessoaController::class, 'edicaoEndereco'])->name('admin.pessoas.editarEndereco');
+
+
+
+Route::get('/admins/pessoas/adicionarEndereco/{id}', [PessoaController::class, 'adicionarEndereco'])->name('admin.pessoas.adicionarEndereco');
+Route::delete('/admins/pessoas/deletarEndereco/{id}', [PessoaController::class, 'destroyEndereco'])->name('admin.pessoas.deletarEndereco');
+Route::get('/admins/pessoas/entradaCEP/{id}', [PessoaController::class, 'showEntradaCEP'])->name('admin.pessoas.entradaCEP');
+Route::get('/admins/pessoas/createEndereco', [PessoaController::class, 'createEndereco'])->name('admin.pessoas.createEndereco');
+Route::post('/admins/pessoas/enderecoSalvar', [PessoaController::class, 'enderecoSalvar'])->name('admin.pessoas.enderecoSalvar');
+Route::put('/admins/pessoas/atualizaEndereco', [PessoaController::class, 'atualizaEndereco'])->name('admin.pessoas.atualizaEndereco');
+Route::get('/admins/pessoas/adicionarPessoa', [PessoaController::class, 'showFormAdicionarPessoa'])->name('admin.pessoas.adicionarPessoa');
+Route::post('/admins/pessoas/addPessoa', [PessoaController::class, 'addPessoa'])->name('admin.pessoas.addPessoa');
+Route::post('/admins/pessoas/{search?}', [PessoaController::class, 'search'])->name('admin.pessoas.search');
+
+
+
+//Administando o Autorizações para Usuários do site
+Route::get('/admins/papel', [PapelController::class, 'index'])->name('admin.papel');
+Route::get('/admins/papel/adicionar', [PapelController::class, 'adicionar'])->name('admin.papel.adicionar');
+Route::post('/admins/papel/salvar', [PapelController::class, 'salvar'])->name('admin.papel.salvar');
+Route::get('/admins/papel/editar/{id}', [PapelController::class, 'editar'])->name('admin.papel.editar');
+Route::put('/admins/papel/atualizar/{id}', [PapelController::class, 'atualizar'])->name('admin.papel.atualizar');
+Route::get('/admins/papel/deletar/{id}', [PapelController::class, 'deletar'])->name('admin.papel.deletar');
+
+
+//Administando o Usuários do site
+Route::get('/admins/usuarios', [UsuarioController::class, 'index'])->name('admin.usuarios');
+Route::get('/admins/usuarios/adicionar', [UsuarioController::class, 'adicionar'])->name('admin.usuarios.adicionar');
+Route::post('/admins/usuarios/salvar', [UsuarioController::class, 'salvar'])->name('admin.usuarios.salvar');
+Route::get('/admins/usuarios/editar/{id}', [UsuarioController::class, 'editar'])->name('admin.usuarios.editar');
+Route::put('/admins/usuarios/atualizar/{id}', [UsuarioController::class, 'atualizar'])->name('admin.usuarios.atualizar');
+Route::get('/admins/usuarios/deletar/{id}', [UsuarioController::class, 'deletar'])->name('admin.usuarios.deletar');
+Route::post('/admins/usuarios/{search?}', [UsuarioController::class, 'search'])->name('admin.usuarios.search');
+
+
+//Administando o Papeis Usuários do site
+
+Route::get('/admins/usuarios/papel/{id}', [UsuarioController::class, 'papel'])->name('admin.usuarios.papel');
+Route::post('/admins/usuarios/papel/salvar/{id}', [UsuarioController::class, 'salvarPapel'])->name('admin.usuarios.papel.salvar');
+Route::get('/admins/usuarios/remover/{id}/{papel_id}', [UsuarioController::class, 'removerPapel'])->name('admin.usuarios.papel.remover');
+
+
+//Administando o Permissões para Usuários do site
+Route::get('/admins/papel/permissao/{id}', [PapelController::class, 'permissao'])->name('admin.papel.permissao');
+Route::post('/admins/papel/permissao/{id}/salvar', [PapelController::class, 'salvarPermissao'])->name('admin.papel.permissao.salvar');
+Route::post('/admins/papel/permissao/{id}/remover/{id_permissao}', [PapelController::class, 'removerPermissao'])->name('admin.papel.permissao.remover');
+
+
+
+//Administando Produtos do site
+
+
 /**
  * index – Lista os dados da tabela
  * create – Retorna a View para criar um item da tabela
@@ -102,3 +163,4 @@ Route::get('/admins/variacoes/{id}', [VariacaoController::class, 'index'])->name
  * update – Salva a atualização do dado
  * destroy – Remove o dado
  */
+
