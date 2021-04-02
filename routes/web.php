@@ -62,7 +62,7 @@ Route::get('/admins/paginas/editar/{id}', [PaginasController::class, 'editar'])-
 Route::put('/admins/paginas/atualizar/{id}', [PaginasController::class, 'atualizar'])->name('admins.paginas.atualizar');
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/sair', [UsuarioController::class, 'sair'])->name('sair');
+Route::get('/sair', [UsuarioController::class, 'logout'])->name('sair');
 
 
 //Administando slides do site

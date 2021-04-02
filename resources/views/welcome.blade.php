@@ -143,7 +143,7 @@
         </div>
     </div>
 
-        @include('layouts._site._parceiros')
+{{--        @include('layouts._site._parceiros')--}}
 
 
     <div class="gototop js-top">
