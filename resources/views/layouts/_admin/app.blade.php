@@ -32,10 +32,10 @@
 
     <title>{{ config('app.name', 'Arruda Calçados') }}</title>
 </head>
-<body" >
+<body>
 <header >
     @auth
-        @include('layouts._Admin._nav')
+        @include('layouts._admin._nav')
     @else
         <nav>
             <div class="nav-wrapper #4db6ac teal lighten-2">
@@ -82,7 +82,7 @@
     @yield('content')
 </main>
 
-@include('layouts._Admin._footer')
+@include('layouts._admin._footer')
 
 <!--Import jQuery.js-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -96,6 +96,7 @@ class UsuarioController extends Controller
 
     public function login(Request $request)
     {
+        dd('aki linha 99 login');
         $dados = $request->all();
         if(Auth::attempt(['email'=>$dados['email'],'password'=>$dados['password']])){
 
