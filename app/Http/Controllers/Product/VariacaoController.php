@@ -195,7 +195,9 @@ class VariacaoController extends Controller
 //
         //implementar o metodo acima para não
         // permitir deleção indevida de objeto que foi vendido.
+
         $pedido=null;
+
         if(!empty(  $pedido->id ))
         {
             \Session::flash('mensagem',['msg'=>'Registro Não pode ser excluido, pois está
@@ -214,7 +216,7 @@ class VariacaoController extends Controller
         {
             $registro = Variacao::find($id);
             $id = $registro->produto_id;  // id do produto
-            dd($registro);
+//            dd($registro);
             $registro->delete();
             \Session::flash('mensagem',['msg'=>'Registro excluído.'
                 ,'class'=>'green white-text']);

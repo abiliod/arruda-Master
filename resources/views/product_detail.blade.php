@@ -17,9 +17,9 @@
                     <div class="row row-pb-lg product-detail-wrap">
                         <div class="col-sm-8">
                             <div class="owl-carousel">
-                                @foreach ($imagems as $chaves)
-                                    {{-- disponível variáveis $chave--}}
-                                     @foreach ($chaves as $chave)
+                               @if($imagems!==null)
+                                   @foreach($imagems as $chaves)
+                                        @foreach ($chaves as $chave)
                                         <div class="item">
                                             <div class="product-entry border">
                                                 <a href="#" class="prod-img">
@@ -27,8 +27,18 @@
                                                 </a>
                                             </div>
                                         </div>
-                                     @endforeach
-                                @endforeach
+                                        @endforeach
+                                   @endforeach
+                               @else
+                                    <div class="item">
+                                        <div class="product-entry border">
+                                            <a href="#" class="prod-img">
+                                                <img src="" class="img-fluid" alt="Click">
+                                            </a>
+                                        </div>
+                                    </div>
+                               @endif
+
                             </div>
                         </div>
                         <div class="col-sm-4">

@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dde80b7f-e45d-40d3-a1cf-9598c2b0df33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_admin/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cart/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Product/VariacaoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admins/products/_form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/product_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/product_detail.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +191,11 @@
       <workItem from="1617389830790" duration="1438000" />
       <workItem from="1617391600795" duration="1776000" />
       <workItem from="1617393418182" duration="684000" />
-      <workItem from="1617395658689" duration="1138000" />
+      <workItem from="1617395658689" duration="3646000" />
+      <workItem from="1617399345390" duration="805000" />
+      <workItem from="1617414368091" duration="3554000" />
+      <workItem from="1617417995683" duration="1565000" />
+      <workItem from="1617444110288" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="02-04-2021- ajuste de rotas. atualiza versão.">
       <created>1617393699807</created>
@@ -198,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617393699807</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="02-04-2021- ajuste de rotas app e login.">
+      <created>1617396992955</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617396992955</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,24 +219,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="02-04-2021- ajuste de rotas. atualiza versão." />
-    <option name="LAST_COMMIT_MESSAGE" value="02-04-2021- ajuste de rotas. atualiza versão." />
+    <MESSAGE value="02-04-2021- ajuste de rotas app e login." />
+    <option name="LAST_COMMIT_MESSAGE" value="02-04-2021- ajuste de rotas app e login." />
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="241" key="#Composer" timestamp="1616413732057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="434" y="241" key="#Composer/0.0.1366.728@0.0.1366.728" timestamp="1616413732057" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1617393698694">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1617396991792">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617393698694" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617396991792" />
     <state x="511" y="65" key="RollbackChangesDialog" timestamp="1617187963367">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="511" y="65" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1617187963367" />
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1617393703197">
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2" timestamp="1617396995092">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617393703197" />
+    <state x="275" y="83" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617396995092" />
   </component>
 </project>

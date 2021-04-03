@@ -88,7 +88,8 @@ class ProductController extends Controller
                 ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
                 ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
                 ->paginate(10);
-            return view('admins.products.index', compact('registros', 'modelos','colecaos'));
+            return view('admins.products.index', compact('registros',
+                'modelos','colecaos'));
         }
     }
     /**
@@ -182,7 +183,8 @@ class ProductController extends Controller
             ->join('colecaos', 'products.colecao_id', '=', 'colecaos.id')
             ->select('products.*','modelos.modelo_description','colecaos.colecao_description')
             ->paginate(10);
-        return view('admins.products.index', compact('registros', 'modelos','colecaos'));
+        return view('admins.products.index', compact('registros',
+            'modelos','colecaos'));
     }
     /**
      * Show the form for creating a new resource.

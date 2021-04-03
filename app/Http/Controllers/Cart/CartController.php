@@ -56,7 +56,8 @@ class CartController extends Controller
             ->where('produto_id' ,'=', $id)
             ->where('estoque' ,'>=', 1)
             ->get();
-        return view('product_detail', compact('sizes','imagems','registro','variacoes', 'modelos','colecaos'));
+        return view('product_detail', compact('sizes',
+            'imagems','registro','variacoes', 'modelos','colecaos'));
     }
 
     /**

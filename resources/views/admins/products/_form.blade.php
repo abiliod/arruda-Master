@@ -140,7 +140,8 @@
             @else
                 <option value="{{old('modelo_id')}}"
                         selected="selected">
-                    {{ $registro->modelo_description }}
+           
+                    {{ isset($registro->modelo_description) ? $registro->modelo_description : '' }}
                 </option>
 {{--                <option value="{{old('modelo_id')}}" selected="selected" >{{ $registro->modelo_description }}</option>--}}
             @endif
